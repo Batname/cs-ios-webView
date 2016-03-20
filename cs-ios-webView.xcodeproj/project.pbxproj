@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		962633551C9EA88500F8402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633541C9EA88500F8402F /* AppDelegate.swift */; };
-		962633571C9EA88500F8402F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633561C9EA88500F8402F /* ViewController.swift */; };
+		962633571C9EA88500F8402F /* IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633561C9EA88500F8402F /* IndexController.swift */; };
 		9626335C1C9EA88500F8402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9626335B1C9EA88500F8402F /* Assets.xcassets */; };
 		9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633691C9EA88500F8402F /* cs_ios_webViewTests.swift */; };
 		962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633741C9EA88500F8402F /* cs_ios_webViewUITests.swift */; };
@@ -35,7 +35,7 @@
 /* Begin PBXFileReference section */
 		962633511C9EA88500F8402F /* cs-ios-webView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs-ios-webView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		962633541C9EA88500F8402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		962633561C9EA88500F8402F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		962633561C9EA88500F8402F /* IndexController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexController.swift; sourceTree = "<group>"; };
 		9626335B1C9EA88500F8402F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		962633601C9EA88500F8402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		962633651C9EA88500F8402F /* cs-ios-webViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cs-ios-webViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +145,7 @@
 		962633841C9EAAAE00F8402F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				962633561C9EA88500F8402F /* ViewController.swift */,
+				962633561C9EA88500F8402F /* IndexController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962633571C9EA88500F8402F /* ViewController.swift in Sources */,
+				962633571C9EA88500F8402F /* IndexController.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

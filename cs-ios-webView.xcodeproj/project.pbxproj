@@ -15,9 +15,6 @@
 		962633961C9EBCBE00F8402F /* IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* IndexController.swift */; };
 		962633971C9EBCBE00F8402F /* IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* IndexController.swift */; };
 		962633981C9EBCBE00F8402F /* IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* IndexController.swift */; };
-		9626339A1C9EBDF400F8402F /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633991C9EBDF400F8402F /* IndexView.swift */; };
-		9626339B1C9EBDF400F8402F /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633991C9EBDF400F8402F /* IndexView.swift */; };
-		9626339C1C9EBDF400F8402F /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633991C9EBDF400F8402F /* IndexView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +47,6 @@
 		962633761C9EA88500F8402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		962633891C9EADC100F8402F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		962633951C9EBCBE00F8402F /* IndexController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexController.swift; sourceTree = "<group>"; };
-		962633991C9EBDF400F8402F /* IndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +102,6 @@
 				962633861C9EAAC200F8402F /* Helpers */,
 				962633851C9EAAB800F8402F /* Api */,
 				962633841C9EAAAE00F8402F /* Controllers */,
-				962633831C9EAAA200F8402F /* Views */,
 				962633821C9EAA9400F8402F /* Models */,
 				962633541C9EA88500F8402F /* AppDelegate.swift */,
 				962633891C9EADC100F8402F /* Main.storyboard */,
@@ -139,14 +134,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		962633831C9EAAA200F8402F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				962633991C9EBDF400F8402F /* IndexView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		962633841C9EAAAE00F8402F /* Controllers */ = {
@@ -316,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				962633961C9EBCBE00F8402F /* IndexController.swift in Sources */,
-				9626339A1C9EBDF400F8402F /* IndexView.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,7 +312,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				962633971C9EBCBE00F8402F /* IndexController.swift in Sources */,
-				9626339B1C9EBDF400F8402F /* IndexView.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				962633981C9EBCBE00F8402F /* IndexController.swift in Sources */,
-				9626339C1C9EBDF400F8402F /* IndexView.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

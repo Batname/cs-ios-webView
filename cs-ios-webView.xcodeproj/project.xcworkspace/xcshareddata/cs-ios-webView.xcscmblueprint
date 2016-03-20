@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "531F00B9B0D74D91764CC6D8738F4B98030530FA+++25BAEEF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "67519EC005677F03AF2FFE7624409F387494BAFE+++089256F" : 0,
+    "67519EC005677F03AF2FFE7624409F387494BAFE+++CC8CD9D" : 0,
+    "531F00B9B0D74D91764CC6D8738F4B98030530FA+++25BAEEF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FAC94CFE-3370-4FDE-B8A9-285944E9D1AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "67519EC005677F03AF2FFE7624409F387494BAFE+++089256F" : "casino-saga-backend\/",
+    "67519EC005677F03AF2FFE7624409F387494BAFE+++CC8CD9D" : "casino-saga-backend\/",
+    "531F00B9B0D74D91764CC6D8738F4B98030530FA+++25BAEEF" : "cs-ios-webView\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "cs-ios-webView",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "cs-ios-webView.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Batname\/cs-ios-webView.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "531F00B9B0D74D91764CC6D8738F4B98030530FA+++25BAEEF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:RushPlay\/casino-saga.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67519EC005677F03AF2FFE7624409F387494BAFE+++089256F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:RushPlay\/casino-saga.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67519EC005677F03AF2FFE7624409F387494BAFE+++CC8CD9D"
+    }
+  ]
+}

@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="29w-b6-apW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Index" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRb-3N-ZVX">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fRb-3N-ZVX" firstAttribute="centerY" secondItem="29w-b6-apW" secondAttribute="centerY" id="RQ4-Bv-gRb"/>
+                            <constraint firstItem="fRb-3N-ZVX" firstAttribute="centerX" secondItem="29w-b6-apW" secondAttribute="centerX" id="WCX-TN-arb"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2D-4N-RNh" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -2,9 +2,30 @@
 import UIKit
 import WebKit
 
-class IndexController: UIViewController {
+class IndexController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView?
+    
+    /* Start the network activity indicator when the web view is loading */
+    func webView(webView: WKWebView,
+        didStartProvisionalNavigation navigation: WKNavigation){
+            print("Loading START")
+    }
+    
+    /* Stop the network activity indicator when the loading finishes */
+    func webView(webView: WKWebView,
+        didFinishNavigation navigation: WKNavigation){
+            print("Loading DONE")
+            webView.evaluateJavaScript("document.body.hide()", completionHandler: nil)
+    }
+    
+    func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {
+        print("error occurs during a committed mainframe navigation")
+    }
+    
+    func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
+        print("error occurs while starting to load data for the mainframe")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +45,12 @@ class IndexController: UIViewController {
         
         let siteURL = NSURL(string: address)
         let request = NSURLRequest(URL: siteURL!)
+        webView?.navigationDelegate = self
         webView?.loadRequest(request)
         
     }
     
     func layoutWebBrowsingElements() {
-        
         
         let wkWebView = WKWebView(frame: view.bounds)
         webView = wkWebView

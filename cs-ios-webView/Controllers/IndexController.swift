@@ -4,18 +4,18 @@ import WebKit
 
 class IndexController: UIViewController, WKNavigationDelegate {
     
-    var webView: WKWebView?
+    var webView: WKWebView
+    let website = "http://localhost:8000"
     
-    /* Start the network activity indicator when the web view is loading */
     func webView(webView: WKWebView,
         didStartProvisionalNavigation navigation: WKNavigation){
             print("Loading START")
     }
     
-    /* Stop the network activity indicator when the loading finishes */
     func webView(webView: WKWebView,
         didFinishNavigation navigation: WKNavigation){
             print("Loading DONE")
+            self.layoutWebBrowsingElements()
             webView.evaluateJavaScript("console.log('Loading DONE')", completionHandler: nil)
     }
     
@@ -27,38 +27,28 @@ class IndexController: UIViewController, WKNavigationDelegate {
         print("error occurs while starting to load data for the mainframe")
     }
     
+    required init?(coder aDecoder: NSCoder) {
+        self.webView = WKWebView(frame: CGRectZero)
+        super.init(coder: aDecoder)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        let website = "http://localhost:8000"
-        layoutWebBrowsingElements()
-        loadURLRequest(website)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.webView.navigationDelegate = self
+        self.loadURLRequest(self.website)
     }
     
     func loadURLRequest(address: String) {
-        
         let siteURL = NSURL(string: address)
         let request = NSURLRequest(URL: siteURL!)
-        webView?.navigationDelegate = self
-        webView?.loadRequest(request)
-        
+        self.webView.loadRequest(request)
     }
     
     func layoutWebBrowsingElements() {
         
-        let wkWebView = WKWebView(frame: view.bounds)
-        webView = wkWebView
+        self.webView.translatesAutoresizingMaskIntoConstraints = false
         
-        wkWebView.translatesAutoresizingMaskIntoConstraints = false
-        
-        
-        self.view.addSubview(wkWebView)
+        self.view.addSubview(webView)
         
         let webTopSpaceToContainer = NSLayoutConstraint(item: self.view, attribute: .TopMargin, relatedBy: .Equal, toItem: webView, attribute: .Top, multiplier: 1, constant: -20)
         let webBottomSpaceToContainer = NSLayoutConstraint(item: self.view, attribute: .BottomMargin, relatedBy: .Equal, toItem: webView, attribute: .Bottom, multiplier: 1, constant: 0)

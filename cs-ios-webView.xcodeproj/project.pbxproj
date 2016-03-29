@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9600E6631C9F2B9600AC343C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600E6621C9F2B9600AC343C /* Main.storyboard */; };
-		9600E6651C9F2C8F00AC343C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600E6641C9F2C8F00AC343C /* LaunchScreen.storyboard */; };
 		962633551C9EA88500F8402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633541C9EA88500F8402F /* AppDelegate.swift */; };
 		9626335C1C9EA88500F8402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9626335B1C9EA88500F8402F /* Assets.xcassets */; };
 		9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633691C9EA88500F8402F /* cs_ios_webViewTests.swift */; };
@@ -37,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		9600E6621C9F2B9600AC343C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		9600E6641C9F2C8F00AC343C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		962633511C9EA88500F8402F /* cs-ios-webView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs-ios-webView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		962633541C9EA88500F8402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9626335B1C9EA88500F8402F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 				9626335B1C9EA88500F8402F /* Assets.xcassets */,
 				962633601C9EA88500F8402F /* Info.plist */,
 				9600E6621C9F2B9600AC343C /* Main.storyboard */,
-				9600E6641C9F2C8F00AC343C /* LaunchScreen.storyboard */,
 			);
 			path = "cs-ios-webView";
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9600E6651C9F2C8F00AC343C /* LaunchScreen.storyboard in Resources */,
 				9626335C1C9EA88500F8402F /* Assets.xcassets in Resources */,
 				9600E6631C9F2B9600AC343C /* Main.storyboard in Resources */,
 			);

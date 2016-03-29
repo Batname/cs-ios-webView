@@ -16,7 +16,7 @@ class IndexController: UIViewController, WKNavigationDelegate {
     func webView(webView: WKWebView,
         didFinishNavigation navigation: WKNavigation){
             print("Loading DONE")
-            webView.evaluateJavaScript("document.body.hide()", completionHandler: nil)
+            webView.evaluateJavaScript("console.log('Loading DONE')", completionHandler: nil)
     }
     
     func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {

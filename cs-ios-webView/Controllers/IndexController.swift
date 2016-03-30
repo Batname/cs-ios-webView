@@ -7,6 +7,7 @@ class IndexController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView
     let website = "http://localhost:8000"
     let userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"
+    var isWebViewLoaded: Bool = false
     
     @IBOutlet weak var progressView: UIProgressView!
     
@@ -19,7 +20,10 @@ class IndexController: UIViewController, WKNavigationDelegate {
         didFinishNavigation navigation: WKNavigation){
             print("Loading DONE")
             self.progressView.setProgress(0.0, animated: false)
-            self.layoutWebBrowsingElements()
+            if (!self.isWebViewLoaded) {
+                self.layoutWebBrowsingElements()
+                self.isWebViewLoaded = true
+            }
             webView.evaluateJavaScript("console.log('Loading DONE')", completionHandler: nil)
     }
     

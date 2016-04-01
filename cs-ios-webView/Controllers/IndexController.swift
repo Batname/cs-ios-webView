@@ -11,6 +11,16 @@ class IndexController: UIViewController, WKNavigationDelegate {
     
     @IBOutlet weak var progressView: UIProgressView!
     
+    func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
+
+        if let url = navigationAction.request.URL where String(url.absoluteURL) == "native://close" {
+            decisionHandler(.Cancel)
+            print("Move to some part of app native://close")
+        }
+
+        decisionHandler(.Allow)
+    }
+    
     func webView(webView: WKWebView,
         didStartProvisionalNavigation navigation: WKNavigation){
             print("Loading START")

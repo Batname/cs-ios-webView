@@ -8,7 +8,7 @@
         <!--Battle Web View Controller-->
         <scene sceneID="zAg-QT-wcK">
             <objects>
-                <viewController id="9pX-5K-2oM" customClass="BattleWebViewController" customModule="cs_ios_webView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BattleWebViewController" id="9pX-5K-2oM" customClass="BattleWebViewController" customModule="cs_ios_webView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="37e-1m-1hp"/>
                         <viewControllerLayoutGuide type="bottom" id="hBr-OC-dFj"/>
@@ -37,6 +37,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2D-4N-RNh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="330" y="322"/>
+        </scene>
+        <!--Index Native Controller-->
+        <scene sceneID="OhA-Ad-5Vj">
+            <objects>
+                <viewController storyboardIdentifier="IndexNativeController" id="WqP-K1-EeB" customClass="IndexNativeController" customModule="cs_ios_webView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WNh-oL-7Y3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q8U-KS-IfC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nYV-Oz-GWE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IndexNativeController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-nd-1Qu">
+                                <rect key="frame" x="217" y="289" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y5U-nd-1Qu" firstAttribute="centerY" secondItem="nYV-Oz-GWE" secondAttribute="centerY" id="H06-FC-SWv"/>
+                            <constraint firstItem="y5U-nd-1Qu" firstAttribute="centerX" secondItem="nYV-Oz-GWE" secondAttribute="centerX" id="uTo-BD-ZUx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hp1-f7-wRZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="1065"/>
         </scene>
     </scenes>
 </document>

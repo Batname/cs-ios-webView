@@ -14,8 +14,21 @@ class BattleWebViewController: UIViewController, WKNavigationDelegate {
     func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
 
         if let url = navigationAction.request.URL where String(url.absoluteURL) == "native://close" {
-            decisionHandler(.Cancel)
+
+            let IndexNativeController = (self.storyboard?.instantiateViewControllerWithIdentifier("IndexNativeController"))! as UIViewController
+            
+            let window = UIApplication.sharedApplication().windows[0] as UIWindow
+            UIView.transitionFromView(
+                window.rootViewController!.view,
+                toView: IndexNativeController.view,
+                duration: 0.65,
+                options: .TransitionCrossDissolve,
+                completion: {
+                    finished in window.rootViewController = IndexNativeController
+            })
+            
             print("Move to some part of app native://close")
+            decisionHandler(.Cancel)
         }
 
         decisionHandler(.Allow)
@@ -48,6 +61,10 @@ class BattleWebViewController: UIViewController, WKNavigationDelegate {
     required init?(coder aDecoder: NSCoder) {
         self.webView = WKWebView(frame: CGRectZero)
         super.init(coder: aDecoder)
+    }
+    
+    deinit {
+        self.webView.removeObserver(self, forKeyPath: "estimatedProgress")
     }
 
     override func viewDidLoad() {

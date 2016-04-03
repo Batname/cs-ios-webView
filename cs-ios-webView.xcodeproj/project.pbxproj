@@ -13,9 +13,9 @@
 		9626335C1C9EA88500F8402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9626335B1C9EA88500F8402F /* Assets.xcassets */; };
 		9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633691C9EA88500F8402F /* cs_ios_webViewTests.swift */; };
 		962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633741C9EA88500F8402F /* cs_ios_webViewUITests.swift */; };
-		962633961C9EBCBE00F8402F /* BattleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* BattleWebViewController.swift */; };
-		962633971C9EBCBE00F8402F /* BattleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* BattleWebViewController.swift */; };
-		962633981C9EBCBE00F8402F /* BattleWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* BattleWebViewController.swift */; };
+		962633961C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* IndexWebViewController.swift */; };
+		962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* IndexWebViewController.swift */; };
+		962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633951C9EBCBE00F8402F /* IndexWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		962633701C9EA88500F8402F /* cs-ios-webViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cs-ios-webViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		962633741C9EA88500F8402F /* cs_ios_webViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cs_ios_webViewUITests.swift; sourceTree = "<group>"; };
 		962633761C9EA88500F8402F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		962633951C9EBCBE00F8402F /* BattleWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleWebViewController.swift; sourceTree = "<group>"; };
+		962633951C9EBCBE00F8402F /* IndexWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +141,7 @@
 		962633841C9EAAAE00F8402F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				962633951C9EBCBE00F8402F /* BattleWebViewController.swift */,
+				962633951C9EBCBE00F8402F /* IndexWebViewController.swift */,
 				961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */,
 			);
 			path = Controllers;
@@ -305,7 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962633961C9EBCBE00F8402F /* BattleWebViewController.swift in Sources */,
+				962633961C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 				961B9DA51CB11C5D00C609A6 /* IndexNativeController.swift in Sources */,
 			);
@@ -315,7 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962633971C9EBCBE00F8402F /* BattleWebViewController.swift in Sources */,
+				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,7 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962633981C9EBCBE00F8402F /* BattleWebViewController.swift in Sources */,
+				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

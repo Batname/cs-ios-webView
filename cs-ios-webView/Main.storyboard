@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Index Controller-->
+        <!--Battle Web View Controller-->
         <scene sceneID="zAg-QT-wcK">
             <objects>
-                <viewController id="9pX-5K-2oM" customClass="IndexController" customModule="cs_ios_webView" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pX-5K-2oM" customClass="BattleWebViewController" customModule="cs_ios_webView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="37e-1m-1hp"/>
                         <viewControllerLayoutGuide type="bottom" id="hBr-OC-dFj"/>

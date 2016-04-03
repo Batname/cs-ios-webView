@@ -2,7 +2,7 @@
 import UIKit
 import WebKit
 
-class IndexController: UIViewController, WKNavigationDelegate {
+class BattleWebViewController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView
     let website = "http://localhost:8000"

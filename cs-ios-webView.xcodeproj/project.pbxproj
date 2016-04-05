@@ -22,6 +22,11 @@
 		968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
 		968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */; };
 		968717ED1CB3FB05006DCC87 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EC1CB3FB05006DCC87 /* UserModel.swift */; };
+		968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewManager.swift */; };
+		968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewManager.swift */; };
+		968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
+		968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
+		968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,7 @@
 		968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewJsEvaluator.swift; sourceTree = "<group>"; };
 		968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
 		968717EC1CB3FB05006DCC87 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 		962633861C9EAAC200F8402F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -333,6 +340,7 @@
 			files = (
 				962633961C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717E71CB3F91C006DCC87 /* WebViewManager.swift in Sources */,
+				968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 				968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */,
@@ -348,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
+				968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */,
+				968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +367,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
+				968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */,
+				968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,6 +6,6 @@
 //  Copyright © 2016 Denis Dubinin. All rights reserved.
 //
 
-class WebViewCatcher {
+class WebViewDelegate {
     
 }

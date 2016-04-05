@@ -10,4 +10,9 @@ import LocalAuthentication
 
 class TouchAuthentication {
 
+    // add touch id
+    // validate, handle http errors, success
+    // change password
+    // is touch id available
+    // is touch id exist
 }

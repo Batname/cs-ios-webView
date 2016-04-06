@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9600E6631C9F2B9600AC343C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600E6621C9F2B9600AC343C /* Main.storyboard */; };
+		961436F31CB4EA2F0070A3DE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */; };
 		961B9DA51CB11C5D00C609A6 /* IndexNativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */; };
 		961B9DA71CB19B0000C609A6 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */; };
 		962633551C9EA88500F8402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633541C9EA88500F8402F /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		9600E6621C9F2B9600AC343C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexNativeController.swift; sourceTree = "<group>"; };
 		961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchAuthentication.swift; sourceTree = "<group>"; };
 		962633511C9EA88500F8402F /* cs-ios-webView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs-ios-webView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961436F31CB4EA2F0070A3DE /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 		962633481C9EA88500F8402F = {
 			isa = PBXGroup;
 			children = (
+				961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */,
 				962633531C9EA88500F8402F /* cs-ios-webView */,
 				962633681C9EA88500F8402F /* cs-ios-webViewTests */,
 				962633731C9EA88500F8402F /* cs-ios-webViewUITests */,

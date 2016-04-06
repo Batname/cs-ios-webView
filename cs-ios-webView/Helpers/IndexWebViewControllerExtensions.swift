@@ -1,24 +1,16 @@
 import WebKit
 
 extension IndexWebViewController {
+    
+    func webView(webView: WKWebView, decidePolicyForNavigationResponse navigationResponse: WKNavigationResponse, decisionHandler: (WKNavigationResponsePolicy) -> Void) {
+        decisionHandler(.Allow)
+    }
 
     func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
         
-        if let url = navigationAction.request.URL where String(url.absoluteURL) == "native://close" {
+        if let url = navigationAction.request.URL where String(url.scheme) == "native" {
             
-            let IndexNativeController = (self.storyboard?.instantiateViewControllerWithIdentifier("IndexNativeController"))! as UIViewController
-            
-            let window = UIApplication.sharedApplication().windows[0] as UIWindow
-            UIView.transitionFromView(
-                window.rootViewController!.view,
-                toView: IndexNativeController.view,
-                duration: 0.65,
-                options: .TransitionCrossDissolve,
-                completion: {
-                    finished in window.rootViewController = IndexNativeController
-            })
-            
-            print("Move to some part of app native://close")
+            print(url.queryDictionary)
             decisionHandler(.Cancel)
         }
         

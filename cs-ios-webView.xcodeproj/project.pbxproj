@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9600E6631C9F2B9600AC343C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9600E6621C9F2B9600AC343C /* Main.storyboard */; };
 		961436F31CB4EA2F0070A3DE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */; };
+		961436F61CB569C70070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
+		961436F71CB56A6C0070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
+		961436F81CB56A6C0070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
 		961B9DA51CB11C5D00C609A6 /* IndexNativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */; };
 		961B9DA71CB19B0000C609A6 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */; };
 		962633551C9EA88500F8402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633541C9EA88500F8402F /* AppDelegate.swift */; };
@@ -50,6 +53,7 @@
 /* Begin PBXFileReference section */
 		9600E6621C9F2B9600AC343C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		961436F51CB569C70070A3DE /* queryDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queryDictionary.swift; sourceTree = "<group>"; };
 		961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexNativeController.swift; sourceTree = "<group>"; };
 		961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchAuthentication.swift; sourceTree = "<group>"; };
 		962633511C9EA88500F8402F /* cs-ios-webView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs-ios-webView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961436F41CB5697D0070A3DE /* NativeExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				961436F51CB569C70070A3DE /* queryDictionary.swift */,
+			);
+			path = NativeExtensions;
+			sourceTree = "<group>";
+		};
 		962633481C9EA88500F8402F = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +193,7 @@
 		962633861C9EAAC200F8402F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				961436F41CB5697D0070A3DE /* NativeExtensions */,
 				968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */,
 			);
 			path = Helpers;
@@ -342,6 +355,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				961436F61CB569C70070A3DE /* queryDictionary.swift in Sources */,
 				962633961C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717E71CB3F91C006DCC87 /* WebViewManager.swift in Sources */,
 				968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
@@ -363,6 +377,7 @@
 				968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */,
 				968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
+				961436F71CB56A6C0070A3DE /* queryDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,6 +389,7 @@
 				968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */,
 				968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,
+				961436F81CB56A6C0070A3DE /* queryDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

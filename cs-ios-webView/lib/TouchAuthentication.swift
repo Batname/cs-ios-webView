@@ -9,6 +9,21 @@
 import LocalAuthentication
 
 class TouchAuthentication {
+    
+    let AppName: String
+    var AppLogin: String?
+    var AppPassword: String?
+    
+    init (AppName: String) {
+        self.AppName = AppName
+    }
+    
+    func saveAuthData (login login: String?, password: String?) {
+        AppLogin = login
+        AppPassword = password
+        
+        print(AppLogin)
+    }
 
     // add touch id
     // validate, handle http errors, success

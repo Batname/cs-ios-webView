@@ -15,9 +15,7 @@ extension IndexWebViewController {
                 case "authorized"? :
                     let login = url.queryDictionary?["login"]?.first
                     let password = url.queryDictionary?["password"]?.first
-                    if let _login = login, _password = password {
-                        print(_login, _password)
-                    }
+                    self.auth.saveAuthData(login: login, password: password)
                 default: break
             }
 

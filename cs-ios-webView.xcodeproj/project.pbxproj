@@ -24,6 +24,8 @@
 		964EBF101CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */; };
 		964EBF111CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */; };
 		964EBF121CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */; };
+		964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */; };
+		964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */; };
 		968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E31CB3F5C0006DCC87 /* CasinoHeroesApi.swift */; };
 		968717E71CB3F91C006DCC87 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewManager.swift */; };
 		968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
@@ -379,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */,
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */,
 				968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
@@ -392,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */,
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */,
 				968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,

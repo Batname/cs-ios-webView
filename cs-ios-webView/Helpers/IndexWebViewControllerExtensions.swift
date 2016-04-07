@@ -10,7 +10,17 @@ extension IndexWebViewController {
         
         if let url = navigationAction.request.URL where String(url.scheme) == "native" {
             
-            print(url.queryDictionary)
+            
+            switch url.host {
+                case "authorized"? :
+                    let login = url.queryDictionary?["login"]?.first
+                    let password = url.queryDictionary?["password"]?.first
+                    if let _login = login, _password = password {
+                        print(_login, _password)
+                    }
+                default: break
+            }
+
             decisionHandler(.Cancel)
         }
         

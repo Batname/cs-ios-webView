@@ -6,13 +6,18 @@
 //  Copyright © 2016 Denis Dubinin. All rights reserved.
 //
 
+import CoreData
 import LocalAuthentication
+import Security
 
 class TouchAuthentication {
     
     let AppName: String
     var AppLogin: String?
     var AppPassword: String?
+    
+    let MyKeychainWrapper = KeychainWrapper()
+    let MyOnePassword = OnePasswordExtension()
     
     init (AppName: String) {
         self.AppName = AppName

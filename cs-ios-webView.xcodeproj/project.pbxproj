@@ -11,9 +11,6 @@
 		96138FDC1CB6F42E006274A5 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96138FDB1CB6F42E006274A5 /* KeychainWrapper.m */; };
 		96138FDD1CB6F42E006274A5 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96138FDB1CB6F42E006274A5 /* KeychainWrapper.m */; };
 		96138FDE1CB6F42E006274A5 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 96138FDB1CB6F42E006274A5 /* KeychainWrapper.m */; };
-		96138FE91CB6F62D006274A5 /* OnePasswordExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96138FE81CB6F62D006274A5 /* OnePasswordExtension.m */; };
-		96138FEA1CB6F62D006274A5 /* OnePasswordExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96138FE81CB6F62D006274A5 /* OnePasswordExtension.m */; };
-		96138FEB1CB6F62D006274A5 /* OnePasswordExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 96138FE81CB6F62D006274A5 /* OnePasswordExtension.m */; };
 		961436F31CB4EA2F0070A3DE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */; };
 		961436F61CB569C70070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
 		961436F71CB56A6C0070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
@@ -68,8 +65,6 @@
 		96138FD91CB6F42E006274A5 /* cs-ios-webViewUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cs-ios-webViewUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		96138FDA1CB6F42E006274A5 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		96138FDB1CB6F42E006274A5 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
-		96138FE71CB6F62D006274A5 /* OnePasswordExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnePasswordExtension.h; sourceTree = "<group>"; };
-		96138FE81CB6F62D006274A5 /* OnePasswordExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnePasswordExtension.m; sourceTree = "<group>"; };
 		961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		961436F51CB569C70070A3DE /* queryDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queryDictionary.swift; sourceTree = "<group>"; };
 		961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexNativeController.swift; sourceTree = "<group>"; };
@@ -127,15 +122,6 @@
 				96138FDB1CB6F42E006274A5 /* KeychainWrapper.m */,
 			);
 			path = KeychainWrapper;
-			sourceTree = "<group>";
-		};
-		96138FE61CB6F618006274A5 /* OnePasswordExtension */ = {
-			isa = PBXGroup;
-			children = (
-				96138FE71CB6F62D006274A5 /* OnePasswordExtension.h */,
-				96138FE81CB6F62D006274A5 /* OnePasswordExtension.m */,
-			);
-			path = OnePasswordExtension;
 			sourceTree = "<group>";
 		};
 		96138FEC1CB6F6DF006274A5 /* SupportingFiles */ = {
@@ -250,7 +236,6 @@
 		962633871C9EAB9D00F8402F /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				96138FE61CB6F618006274A5 /* OnePasswordExtension */,
 				96138FD61CB6F3E3006274A5 /* KeychainWrapper */,
 				968717E51CB3F8A7006DCC87 /* WebViewManager */,
 				961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */,
@@ -413,7 +398,6 @@
 				968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 				968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */,
-				96138FE91CB6F62D006274A5 /* OnePasswordExtension.m in Sources */,
 				961B9DA51CB11C5D00C609A6 /* IndexNativeController.swift in Sources */,
 				96138FDC1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */,
@@ -430,7 +414,6 @@
 				964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */,
 				96138FDD1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
-				96138FEA1CB6F62D006274A5 /* OnePasswordExtension.m in Sources */,
 				968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */,
 				968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
@@ -446,7 +429,6 @@
 				964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */,
 				96138FDE1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
-				96138FEB1CB6F62D006274A5 /* OnePasswordExtension.m in Sources */,
 				968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */,
 				968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,

@@ -17,7 +17,6 @@ class TouchAuthentication {
     var AppPassword: String?
     
     let MyKeychainWrapper = KeychainWrapper()
-    let MyOnePassword = OnePasswordExtension()
     
     init (AppName: String) {
         self.AppName = AppName

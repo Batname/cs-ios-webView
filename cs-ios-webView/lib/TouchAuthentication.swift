@@ -29,8 +29,16 @@ class TouchAuthentication {
         AppLogin = login
         AppPassword = password
         
-        print(keychain.get("userPassword"))
+        if let storedUserLogin = NSUserDefaults.standardUserDefaults().valueForKey("userLogin") as? String {
+            print(storedUserLogin)
+        }
+        
+        if let storedUserPassword = keychain.get("userPassword") {
+            print(storedUserPassword)
+        }
+        
         keychain.set(AppPassword!, forKey: "userPassword")
+        NSUserDefaults.standardUserDefaults().setValue(AppLogin, forKey: "userLogin")
         
     }
 

@@ -16,8 +16,6 @@ class TouchAuthentication {
     let AppName: String
     let keychain = KeychainSwift()
     
-    let MyKeychainWrapper = KeychainWrapper()
-    
     init (AppName: String) {
         self.AppName = AppName
         NSUserDefaults.standardUserDefaults().setValue(AppName, forKey: "appName")

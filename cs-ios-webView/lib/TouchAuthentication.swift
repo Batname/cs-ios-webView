@@ -20,26 +20,32 @@ class TouchAuthentication {
     
     init (AppName: String) {
         self.AppName = AppName
+        NSUserDefaults.standardUserDefaults().setValue(AppName, forKey: "appName")
     }
     
     func saveAuthData (login login: String, password: String) {
         
-        if let storedUserLogin = NSUserDefaults.standardUserDefaults().valueForKey("userLogin") as? String {
-            print(storedUserLogin)
+        if checkLogin(login, password:password) {
+            print("login exists")
+            return
         }
-        
-        if let storedUserPassword = keychain.get("userPassword") {
-            print(storedUserPassword)
-        }
-        
+
         keychain.set(password, forKey: "userPassword")
         NSUserDefaults.standardUserDefaults().setValue(login, forKey: "userLogin")
         
     }
+    
+    func checkLogin (login: String, password: String) -> Bool {
+        if login == NSUserDefaults.standardUserDefaults().valueForKey("userLogin") as? String &&
+            password == keychain.get("userPassword")! as String {
+            return true
+        } else {
+            return false
+        }
+    }
 
     // add touch id
     // validate, handle http errors, success
-    // change password
     // is touch id available
     // is touch id exist
 }

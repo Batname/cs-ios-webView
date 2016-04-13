@@ -15,6 +15,7 @@ class TouchAuthentication {
     
     let AppName: String
     let keychain = KeychainSwift()
+    let authenticationContext = LAContext()
     
     init (AppName: String) {
         self.AppName = AppName
@@ -23,7 +24,7 @@ class TouchAuthentication {
     
     func saveAuthData (login login: String, password: String) {
         
-        if checkLogin(login, password:password) {
+        if checkCredentialCorrectly(login, password:password) {
             print("login exists")
             return
         }
@@ -33,7 +34,7 @@ class TouchAuthentication {
         
     }
     
-    func checkLogin (login: String, password: String) -> Bool {
+    func checkCredentialCorrectly (login: String, password: String) -> Bool {
         if login == NSUserDefaults.standardUserDefaults().valueForKey("userLogin") as? String &&
             password == keychain.get("userPassword")! as String {
             return true
@@ -41,9 +42,31 @@ class TouchAuthentication {
             return false
         }
     }
+    
+    func checkCredentialAvailability () -> Bool {
+        if NSUserDefaults.standardUserDefaults().valueForKey("userLogin") != nil &&
+            keychain.get("userPassword") != nil {
+                return true
+        } else {
+            return false
+        }
+    }
+    
+    func checkTouchIDAvailability () -> Bool {
+        guard authenticationContext.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: nil) else {
+            return false
+        }
+        return true
+    }
+    
+    func addAuthLink () {
+        if checkTouchIDAvailability() && checkCredentialAvailability (){
+            print("addAuthLink")
+        }
+    }
+    
 
     // add touch id
     // validate, handle http errors, success
-    // is touch id available
     // is touch id exist
 }

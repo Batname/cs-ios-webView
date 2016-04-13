@@ -20,6 +20,7 @@ extension IndexWebViewController {
                 case "reauthenticated"? :
                     print("reauthenticated")
                 case "notauthorized"? :
+                    self.auth.addAuthLink()
                     print("notauthorized")
                 default: break
             }

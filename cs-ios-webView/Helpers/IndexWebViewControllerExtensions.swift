@@ -19,6 +19,8 @@ extension IndexWebViewController {
                     }
                 case "reauthenticated"? :
                     print("reauthenticated")
+                case "notauthorized"? :
+                    print("notauthorized")
                 default: break
             }
 

@@ -40,6 +40,7 @@
 		968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
 		968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
 		968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
+		96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2A1CBE99FC00EC440D /* unwrap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
 		968717EC1CB3FB05006DCC87 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebViewControllerExtensions.swift; sourceTree = "<group>"; };
+		96FB6B2A1CBE99FC00EC440D /* unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unwrap.swift; sourceTree = "<group>"; };
 		9D4CF13FCA9BF2F6AE667353 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D05DFD5A10A2472437784FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,6 +244,7 @@
 		962633861C9EAAC200F8402F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B291CBE99B800EC440D /* GlobalFunctions */,
 				961436F41CB5697D0070A3DE /* NativeExtensions */,
 				968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */,
 			);
@@ -274,6 +277,14 @@
 				964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */,
 			);
 			path = WebViewManager;
+			sourceTree = "<group>";
+		};
+		96FB6B291CBE99B800EC440D /* GlobalFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				96FB6B2A1CBE99FC00EC440D /* unwrap.swift */,
+			);
+			path = GlobalFunctions;
 			sourceTree = "<group>";
 		};
 		EEB9ECF69ABAEBD9A2F28F01 /* Pods */ = {
@@ -472,6 +483,7 @@
 				968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
+				96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */,
 				968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */,
 				961B9DA51CB11C5D00C609A6 /* IndexNativeController.swift in Sources */,
 				96138FDC1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,

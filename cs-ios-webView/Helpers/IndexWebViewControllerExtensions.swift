@@ -13,9 +13,11 @@ extension IndexWebViewController {
             
             switch url.host {
                 case "authorized"? :
-                    let login = url.queryDictionary?["login"]?.first
-                    let password = url.queryDictionary?["password"]?.first
-                    self.auth.saveAuthData(login: login, password: password)
+                
+                    if let (login, password) = unwrap(url.queryDictionary?["login"]?.first, url.queryDictionary?["password"]?.first)
+                    {
+                       self.auth.saveAuthData(login: login, password: password)
+                    }
                 default: break
             }
 

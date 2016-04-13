@@ -14,8 +14,6 @@ import KeychainSwift
 class TouchAuthentication {
     
     let AppName: String
-    var AppLogin: String?
-    var AppPassword: String?
     let keychain = KeychainSwift()
     
     let MyKeychainWrapper = KeychainWrapper()
@@ -24,10 +22,7 @@ class TouchAuthentication {
         self.AppName = AppName
     }
     
-    func saveAuthData (login login: String?, password: String?) {
-    
-        AppLogin = login
-        AppPassword = password
+    func saveAuthData (login login: String, password: String) {
         
         if let storedUserLogin = NSUserDefaults.standardUserDefaults().valueForKey("userLogin") as? String {
             print(storedUserLogin)
@@ -37,8 +32,8 @@ class TouchAuthentication {
             print(storedUserPassword)
         }
         
-        keychain.set(AppPassword!, forKey: "userPassword")
-        NSUserDefaults.standardUserDefaults().setValue(AppLogin, forKey: "userLogin")
+        keychain.set(password, forKey: "userPassword")
+        NSUserDefaults.standardUserDefaults().setValue(login, forKey: "userLogin")
         
     }
 

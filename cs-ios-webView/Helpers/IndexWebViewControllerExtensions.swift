@@ -22,6 +22,9 @@ extension IndexWebViewController {
                 case "notauthorized"? :
                     self.auth.addAuthLink()
                     print("notauthorized")
+                case "touchIdAuth"? :
+                    self.auth.checkFingerPrint();
+                    print("checkFingerPrint")
                 default: break
             }
 

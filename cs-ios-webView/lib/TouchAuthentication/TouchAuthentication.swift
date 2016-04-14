@@ -92,7 +92,7 @@ class TouchAuthentication {
             print("addAuthLink")
         }
     }
-    private func checkFingerPrint () {
+    func checkFingerPrint () {
         authenticationContext.evaluatePolicy(.DeviceOwnerAuthentication, localizedReason: "Casino heroes auth here", reply: {
             (success, error) -> Void in
             

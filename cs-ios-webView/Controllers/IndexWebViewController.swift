@@ -11,6 +11,7 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
     var isWebViewLoaded: Bool = false
     var auth = TouchAuthentication(AppName: "CasinoHeroes")
     let resourceFileManager = ResourceFileManager()
+    var injectorJsFile: String?
     
     @IBOutlet weak var progressView: UIProgressView!
     
@@ -27,6 +28,7 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
         webView.navigationDelegate = self
         webViewManager?.loadURLRequest(website)
         auth.alertCallbacks["showAlertWithTitle"] = showAlertWithTitle
+        injectorJsFile = self.resourceFileManager.getAsString("injector", encoding: "js")
     }
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {

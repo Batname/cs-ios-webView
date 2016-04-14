@@ -45,8 +45,8 @@ extension IndexWebViewController {
                 self.isWebViewLoaded = true
             }
             
-            if let injectorJs = self.resourceFileManager.getAsString("injector", encoding: "js") {
-                webView.evaluateJavaScript(injectorJs) { (result, error) in
+            if let injectorJsFile = self.injectorJsFile {
+                webView.evaluateJavaScript(injectorJsFile) { (result, error) in
                     if error != nil {
                         print(result)
                     }

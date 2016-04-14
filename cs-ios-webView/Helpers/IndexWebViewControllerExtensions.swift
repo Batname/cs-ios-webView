@@ -44,7 +44,14 @@ extension IndexWebViewController {
                 self.webViewManager?.layoutWebBrowsingElements()
                 self.isWebViewLoaded = true
             }
-            webView.evaluateJavaScript("console.log('Loading DONE')", completionHandler: nil)
+            
+            if let injectorJs = self.resourceFileManager.getAsString("injector", encoding: "js") {
+                webView.evaluateJavaScript(injectorJs) { (result, error) in
+                    if error != nil {
+                        print(result)
+                    }
+                }
+            }
     }
     
     func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {

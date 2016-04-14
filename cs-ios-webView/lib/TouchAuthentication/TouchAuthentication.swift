@@ -62,7 +62,6 @@ class TouchAuthentication {
     }
     
     func addAuthLink () {
-        checkFingerPrint()
         if checkTouchIDAvailability() && checkCredentialAvailability (){
             print("addAuthLink")
         }

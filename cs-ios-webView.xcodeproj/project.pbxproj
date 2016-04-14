@@ -47,6 +47,10 @@
 		96FB6B321CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
 		96FB6B331CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
 		96FB6B341CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
+		96FB6B3B1CBFB53800EC440D /* injector.js in Resources */ = {isa = PBXBuildFile; fileRef = 96FB6B3A1CBFB0C900EC440D /* injector.js */; };
+		96FB6B3E1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */; };
+		96FB6B3F1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */; };
+		96FB6B401CBFB6E600EC440D /* ResourceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +103,8 @@
 		96FB6B2A1CBE99FC00EC440D /* unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unwrap.swift; sourceTree = "<group>"; };
 		96FB6B2D1CBF755500EC440D /* TouchErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchErrors.swift; sourceTree = "<group>"; };
 		96FB6B311CBF788C00EC440D /* TouchArerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchArerts.swift; sourceTree = "<group>"; };
+		96FB6B3A1CBFB0C900EC440D /* injector.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = injector.js; sourceTree = "<group>"; };
+		96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceFileManager.swift; sourceTree = "<group>"; };
 		9D4CF13FCA9BF2F6AE667353 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D05DFD5A10A2472437784FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -265,6 +271,7 @@
 				96FB6B2C1CBF743000EC440D /* TouchAuthentication */,
 				96138FD61CB6F3E3006274A5 /* KeychainWrapper */,
 				968717E51CB3F8A7006DCC87 /* WebViewManager */,
+				96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -272,6 +279,7 @@
 		962633881C9EAC6A00F8402F /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B391CBFA94D00EC440D /* javascript */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -303,6 +311,14 @@
 				96FB6B311CBF788C00EC440D /* TouchArerts.swift */,
 			);
 			path = TouchAuthentication;
+			sourceTree = "<group>";
+		};
+		96FB6B391CBFA94D00EC440D /* javascript */ = {
+			isa = PBXGroup;
+			children = (
+				96FB6B3A1CBFB0C900EC440D /* injector.js */,
+			);
+			path = javascript;
 			sourceTree = "<group>";
 		};
 		EEB9ECF69ABAEBD9A2F28F01 /* Pods */ = {
@@ -422,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9626335C1C9EA88500F8402F /* Assets.xcassets in Resources */,
+				96FB6B3B1CBFB53800EC440D /* injector.js in Resources */,
 				9600E6631C9F2B9600AC343C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,6 +526,7 @@
 				96138FDC1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */,
 				968717ED1CB3FB05006DCC87 /* UserModel.swift in Sources */,
+				96FB6B3E1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */,
 				961B9DA71CB19B0000C609A6 /* TouchAuthentication.swift in Sources */,
 				964EBF101CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */,
 			);
@@ -521,6 +539,7 @@
 				964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */,
 				96FB6B2F1CBF755500EC440D /* TouchErrors.swift in Sources */,
 				96FB6B331CBF788C00EC440D /* TouchArerts.swift in Sources */,
+				96FB6B3F1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */,
 				96138FDD1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */,
@@ -538,6 +557,7 @@
 				964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */,
 				96FB6B301CBF755500EC440D /* TouchErrors.swift in Sources */,
 				96FB6B341CBF788C00EC440D /* TouchArerts.swift in Sources */,
+				96FB6B401CBFB6E600EC440D /* ResourceFileManager.swift in Sources */,
 				96138FDE1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */,

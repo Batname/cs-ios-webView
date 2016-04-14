@@ -10,6 +10,7 @@ import CoreData
 import LocalAuthentication
 import Security
 import KeychainSwift
+import WebKit
 
 class TouchAuthentication {
     
@@ -18,13 +19,29 @@ class TouchAuthentication {
     var alertCallbacks: Dictionary<String, alertCbClosure> = [:]
     let keychain = KeychainSwift()
     let authenticationContext = LAContext()
+    var webView: WKWebView?
+    let resourceFileManager = ResourceFileManager()
+    let injectorJsFile: String?
     
     init (AppName: String) {
         self.AppName = AppName
         NSUserDefaults.standardUserDefaults().setValue(AppName, forKey: "appName")
+        self.injectorJsFile = resourceFileManager.getAsString("injector", encoding: "js")
     }
     
     func saveAuthData (login login: String, password: String) {
+        
+        if let webView = self.webView {
+            if let injectorJsFile = self.injectorJsFile {
+                webView.evaluateJavaScript(injectorJsFile) { (result, error) in
+                    if error != nil {
+                        print(result)
+                    }
+                }
+            }
+            
+            webView.evaluateJavaScript("window.rootScope.native.TouchAuthActive = false", completionHandler: nil)
+        }
         
         if checkCredentialCorrectly(login, password:password) {
             print("login exists")
@@ -62,11 +79,19 @@ class TouchAuthentication {
     }
     
     func addAuthLink () {
-        if checkTouchIDAvailability() && checkCredentialAvailability (){
+        if let webView = self.webView where checkTouchIDAvailability() && checkCredentialAvailability(){
+            if let injectorJsFile = self.injectorJsFile {
+                webView.evaluateJavaScript(injectorJsFile) { (result, error) in
+                    if error != nil {
+                        print(result)
+                    }
+                }
+            }
+            
+            webView.evaluateJavaScript("window.rootScope.native.TouchAuthActive = true", completionHandler: nil)
             print("addAuthLink")
         }
     }
-    
     private func checkFingerPrint () {
         authenticationContext.evaluatePolicy(.DeviceOwnerAuthentication, localizedReason: "Casino heroes auth here", reply: {
             (success, error) -> Void in

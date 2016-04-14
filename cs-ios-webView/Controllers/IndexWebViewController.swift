@@ -28,6 +28,7 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
         webView.navigationDelegate = self
         webViewManager?.loadURLRequest(website)
         auth.alertCallbacks["showAlertWithTitle"] = showAlertWithTitle
+        auth.webView = self.webView
         injectorJsFile = self.resourceFileManager.getAsString("injector", encoding: "js")
     }
     

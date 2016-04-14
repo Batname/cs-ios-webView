@@ -9,7 +9,7 @@ extension IndexWebViewController {
     func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
         
         if let url = navigationAction.request.URL where String(url.scheme) == "native" {
-            
+            decisionHandler(.Cancel)
             
             switch url.host {
                 case "authorized"? :
@@ -25,7 +25,6 @@ extension IndexWebViewController {
                 default: break
             }
 
-            decisionHandler(.Cancel)
         }
         
         decisionHandler(.Allow)

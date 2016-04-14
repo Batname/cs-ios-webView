@@ -13,7 +13,9 @@ import KeychainSwift
 
 class TouchAuthentication {
     
+    typealias alertCbClosure = (String) -> Void
     let AppName: String
+    var alertCallbacks: Dictionary<String, alertCbClosure> = [:]
     let keychain = KeychainSwift()
     let authenticationContext = LAContext()
     
@@ -75,7 +77,9 @@ class TouchAuthentication {
             } else {
                 if let error = error {
                     let message = self.errorMessageForLAErrorCode(error.code)
-                    print(message)
+                    if let showAlertWithTitle = self.alertCallbacks["showAlertWithTitle"] {
+                        showAlertWithTitle(message)
+                    }
                 }
             }
         })

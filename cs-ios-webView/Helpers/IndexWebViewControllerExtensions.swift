@@ -31,6 +31,10 @@ extension IndexWebViewController {
         decisionHandler(.Allow)
     }
     
+    func webView(webView: WKWebView, didCommitNavigation navigation: WKNavigation!) {
+        webView.evaluateJavaScript("window.embeddedNative = true;", completionHandler: nil)
+    }
+    
     func webView(webView: WKWebView,
         didStartProvisionalNavigation navigation: WKNavigation){
             print("Loading START")

@@ -41,6 +41,12 @@
 		968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
 		968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
 		96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2A1CBE99FC00EC440D /* unwrap.swift */; };
+		96FB6B2E1CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
+		96FB6B2F1CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
+		96FB6B301CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
+		96FB6B321CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
+		96FB6B331CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
+		96FB6B341CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +77,7 @@
 		961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		961436F51CB569C70070A3DE /* queryDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queryDictionary.swift; sourceTree = "<group>"; };
 		961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexNativeController.swift; sourceTree = "<group>"; };
-		961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchAuthentication.swift; sourceTree = "<group>"; };
+		961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchAuthentication.swift; path = "cs-ios-webView/lib/TouchAuthentication/TouchAuthentication.swift"; sourceTree = SOURCE_ROOT; };
 		962633511C9EA88500F8402F /* cs-ios-webView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs-ios-webView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		962633541C9EA88500F8402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9626335B1C9EA88500F8402F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 		968717EC1CB3FB05006DCC87 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebViewControllerExtensions.swift; sourceTree = "<group>"; };
 		96FB6B2A1CBE99FC00EC440D /* unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unwrap.swift; sourceTree = "<group>"; };
+		96FB6B2D1CBF755500EC440D /* TouchErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchErrors.swift; sourceTree = "<group>"; };
+		96FB6B311CBF788C00EC440D /* TouchArerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchArerts.swift; sourceTree = "<group>"; };
 		9D4CF13FCA9BF2F6AE667353 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D05DFD5A10A2472437784FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -254,9 +262,9 @@
 		962633871C9EAB9D00F8402F /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B2C1CBF743000EC440D /* TouchAuthentication */,
 				96138FD61CB6F3E3006274A5 /* KeychainWrapper */,
 				968717E51CB3F8A7006DCC87 /* WebViewManager */,
-				961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -285,6 +293,16 @@
 				96FB6B2A1CBE99FC00EC440D /* unwrap.swift */,
 			);
 			path = GlobalFunctions;
+			sourceTree = "<group>";
+		};
+		96FB6B2C1CBF743000EC440D /* TouchAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */,
+				96FB6B2D1CBF755500EC440D /* TouchErrors.swift */,
+				96FB6B311CBF788C00EC440D /* TouchArerts.swift */,
+			);
+			path = TouchAuthentication;
 			sourceTree = "<group>";
 		};
 		EEB9ECF69ABAEBD9A2F28F01 /* Pods */ = {
@@ -477,7 +495,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FB6B321CBF788C00EC440D /* TouchArerts.swift in Sources */,
 				961436F61CB569C70070A3DE /* queryDictionary.swift in Sources */,
+				96FB6B2E1CBF755500EC440D /* TouchErrors.swift in Sources */,
 				962633961C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717E71CB3F91C006DCC87 /* WebViewManager.swift in Sources */,
 				968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
@@ -499,6 +519,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */,
+				96FB6B2F1CBF755500EC440D /* TouchErrors.swift in Sources */,
+				96FB6B331CBF788C00EC440D /* TouchArerts.swift in Sources */,
 				96138FDD1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */,
@@ -514,6 +536,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */,
+				96FB6B301CBF755500EC440D /* TouchErrors.swift in Sources */,
+				96FB6B341CBF788C00EC440D /* TouchArerts.swift in Sources */,
 				96138FDE1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */,

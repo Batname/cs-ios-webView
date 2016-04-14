@@ -60,9 +60,25 @@ class TouchAuthentication {
     }
     
     func addAuthLink () {
+        checkFingerPrint()
         if checkTouchIDAvailability() && checkCredentialAvailability (){
             print("addAuthLink")
         }
+    }
+    
+    private func checkFingerPrint () {
+        authenticationContext.evaluatePolicy(.DeviceOwnerAuthentication, localizedReason: "Casino heroes auth here", reply: {
+            (success, error) -> Void in
+            
+            if success {
+                print("success touch id identifier")
+            } else {
+                if let error = error {
+                    let message = self.errorMessageForLAErrorCode(error.code)
+                    print(message)
+                }
+            }
+        })
     }
     
 

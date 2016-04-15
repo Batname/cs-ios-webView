@@ -5,12 +5,12 @@ import WebKit
 class IndexWebViewController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView
-    var webViewManager: WebViewManager?
+    var webViewService: WebViewService?
     let website = "http://localhost:8000"
     let userAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1"
     var isWebViewLoaded: Bool = false
     var auth = TouchAuthentication(AppName: "CasinoHeroes")
-    let resourceFileManager = ResourceFileManager()
+    let resourceFileManager = ResourceFileService()
     var injectorJsFile: String?
     
     @IBOutlet weak var progressView: UIProgressView!
@@ -22,11 +22,11 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        webViewManager = WebViewManager(webView: webView, view: view)
+        webViewService = WebViewService(webView: webView, view: view)
         webView.customUserAgent = userAgent
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .New, context: nil)
         webView.navigationDelegate = self
-        webViewManager?.loadURLRequest(website)
+        webViewService?.loadURLRequest(website)
         auth.alertCallbacks["showAlertWithTitle"] = showAlertWithTitle
         auth.webView = self.webView
         injectorJsFile = self.resourceFileManager.getAsString("injector", encoding: "js")

@@ -16,7 +16,6 @@
 		961436F61CB569C70070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
 		961436F71CB56A6C0070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
 		961436F81CB56A6C0070A3DE /* queryDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961436F51CB569C70070A3DE /* queryDictionary.swift */; };
-		961B9DA51CB11C5D00C609A6 /* IndexNativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */; };
 		961B9DA71CB19B0000C609A6 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */; };
 		962633551C9EA88500F8402F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962633541C9EA88500F8402F /* AppDelegate.swift */; };
 		9626335C1C9EA88500F8402F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9626335B1C9EA88500F8402F /* Assets.xcassets */; };
@@ -31,12 +30,12 @@
 		964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */; };
 		964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */; };
 		968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E31CB3F5C0006DCC87 /* CasinoHeroesApi.swift */; };
-		968717E71CB3F91C006DCC87 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewManager.swift */; };
+		968717E71CB3F91C006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
 		968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
 		968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */; };
 		968717ED1CB3FB05006DCC87 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EC1CB3FB05006DCC87 /* UserModel.swift */; };
-		968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewManager.swift */; };
-		968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewManager.swift */; };
+		968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
+		968718001CB458DD006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
 		968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
 		968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
 		968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
@@ -44,13 +43,19 @@
 		96FB6B2E1CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
 		96FB6B2F1CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
 		96FB6B301CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
-		96FB6B321CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
-		96FB6B331CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
-		96FB6B341CBF788C00EC440D /* TouchArerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B311CBF788C00EC440D /* TouchArerts.swift */; };
 		96FB6B3B1CBFB53800EC440D /* injector.js in Resources */ = {isa = PBXBuildFile; fileRef = 96FB6B3A1CBFB0C900EC440D /* injector.js */; };
-		96FB6B3E1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */; };
-		96FB6B3F1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */; };
-		96FB6B401CBFB6E600EC440D /* ResourceFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */; };
+		96FB6B3E1CBFB6E600EC440D /* ResourceFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileService.swift */; };
+		96FB6B3F1CBFB6E600EC440D /* ResourceFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileService.swift */; };
+		96FB6B401CBFB6E600EC440D /* ResourceFileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B3D1CBFB6E600EC440D /* ResourceFileService.swift */; };
+		96FB6B501CC12A3C00EC440D /* AuthStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B4F1CC12A3C00EC440D /* AuthStorage.swift */; };
+		96FB6B511CC12A3C00EC440D /* AuthStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B4F1CC12A3C00EC440D /* AuthStorage.swift */; };
+		96FB6B521CC12A3C00EC440D /* AuthStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B4F1CC12A3C00EC440D /* AuthStorage.swift */; };
+		96FB6B581CC12BDC00EC440D /* IndexWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B571CC12BDC00EC440D /* IndexWebView.swift */; };
+		96FB6B591CC12BDC00EC440D /* IndexWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B571CC12BDC00EC440D /* IndexWebView.swift */; };
+		96FB6B5A1CC12BDC00EC440D /* IndexWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B571CC12BDC00EC440D /* IndexWebView.swift */; };
+		96FB6B5D1CC1340500EC440D /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B5C1CC1340500EC440D /* SafariActivity.swift */; };
+		96FB6B5E1CC1340500EC440D /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B5C1CC1340500EC440D /* SafariActivity.swift */; };
+		96FB6B5F1CC1340500EC440D /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B5C1CC1340500EC440D /* SafariActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +85,7 @@
 		96138FDB1CB6F42E006274A5 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		961436F21CB4EA2F0070A3DE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		961436F51CB569C70070A3DE /* queryDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = queryDictionary.swift; sourceTree = "<group>"; };
-		961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexNativeController.swift; sourceTree = "<group>"; };
-		961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchAuthentication.swift; path = "cs-ios-webView/lib/TouchAuthentication/TouchAuthentication.swift"; sourceTree = SOURCE_ROOT; };
+		961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TouchAuthentication.swift; path = "cs-ios-webView/Services/TouchAuthentication/TouchAuthentication.swift"; sourceTree = SOURCE_ROOT; };
 		962633511C9EA88500F8402F /* cs-ios-webView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cs-ios-webView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		962633541C9EA88500F8402F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9626335B1C9EA88500F8402F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,17 +99,19 @@
 		962633951C9EBCBE00F8402F /* IndexWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebViewController.swift; sourceTree = "<group>"; };
 		964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewNavigationCases.swift; sourceTree = "<group>"; };
 		968717E31CB3F5C0006DCC87 /* CasinoHeroesApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CasinoHeroesApi.swift; sourceTree = "<group>"; };
-		968717E61CB3F91C006DCC87 /* WebViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewManager.swift; sourceTree = "<group>"; };
+		968717E61CB3F91C006DCC87 /* WebViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewService.swift; sourceTree = "<group>"; };
 		968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewJsEvaluator.swift; sourceTree = "<group>"; };
 		968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
 		968717EC1CB3FB05006DCC87 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebViewControllerExtensions.swift; sourceTree = "<group>"; };
 		96FB6B2A1CBE99FC00EC440D /* unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unwrap.swift; sourceTree = "<group>"; };
 		96FB6B2D1CBF755500EC440D /* TouchErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchErrors.swift; sourceTree = "<group>"; };
-		96FB6B311CBF788C00EC440D /* TouchArerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchArerts.swift; sourceTree = "<group>"; };
 		96FB6B3A1CBFB0C900EC440D /* injector.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = injector.js; sourceTree = "<group>"; };
-		96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceFileManager.swift; sourceTree = "<group>"; };
+		96FB6B3D1CBFB6E600EC440D /* ResourceFileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceFileService.swift; sourceTree = "<group>"; };
 		96FB6B431CC1217B00EC440D /* Info-PROD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-PROD.plist"; sourceTree = "<group>"; };
+		96FB6B4F1CC12A3C00EC440D /* AuthStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthStorage.swift; sourceTree = "<group>"; };
+		96FB6B571CC12BDC00EC440D /* IndexWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebView.swift; sourceTree = "<group>"; };
+		96FB6B5C1CC1340500EC440D /* SafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariActivity.swift; sourceTree = "<group>"; };
 		9D4CF13FCA9BF2F6AE667353 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D05DFD5A10A2472437784FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +163,7 @@
 		96138FEC1CB6F6DF006274A5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				962633541C9EA88500F8402F /* AppDelegate.swift */,
 				962633601C9EA88500F8402F /* Info-STAGE.plist */,
 				96FB6B431CC1217B00EC440D /* Info-PROD.plist */,
 				96FB6B421CC11FF600EC440D /* importObjectiveCHeaders */,
@@ -198,20 +205,18 @@
 		962633531C9EA88500F8402F /* cs-ios-webView */ = {
 			isa = PBXGroup;
 			children = (
-				96FB6B4E1CC1272700EC440D /* WebActivities */,
-				96FB6B4D1CC126D000EC440D /* Storage */,
-				96FB6B4C1CC125E000EC440D /* Services */,
-				96FB6B4B1CC125A900EC440D /* Views */,
-				96FB6B4A1CC1249E00EC440D /* Services */,
-				962633881C9EAC6A00F8402F /* assets */,
-				962633871C9EAB9D00F8402F /* lib */,
-				962633861C9EAAC200F8402F /* Helpers */,
 				962633851C9EAAB800F8402F /* Api */,
-				962633841C9EAAAE00F8402F /* ViewControllers */,
-				962633821C9EAA9400F8402F /* Models */,
-				962633541C9EA88500F8402F /* AppDelegate.swift */,
+				962633881C9EAC6A00F8402F /* assets */,
 				9626335B1C9EA88500F8402F /* Assets.xcassets */,
+				962633861C9EAAC200F8402F /* Helpers */,
+				962633871C9EAB9D00F8402F /* lib */,
+				962633821C9EAA9400F8402F /* Models */,
+				96FB6B4C1CC125E000EC440D /* Services */,
+				96FB6B4D1CC126D000EC440D /* Storage */,
 				96138FEC1CB6F6DF006274A5 /* SupportingFiles */,
+				962633841C9EAAAE00F8402F /* ViewControllers */,
+				96FB6B4B1CC125A900EC440D /* Views */,
+				96FB6B4E1CC1272700EC440D /* WebActivities */,
 			);
 			path = "cs-ios-webView";
 			sourceTree = "<group>";
@@ -245,8 +250,8 @@
 		962633841C9EAAAE00F8402F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B5B1CC1309C00EC440D /* extensions */,
 				962633951C9EBCBE00F8402F /* IndexWebViewController.swift */,
-				961B9DA41CB11C5D00C609A6 /* IndexNativeController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -264,7 +269,6 @@
 			children = (
 				96FB6B291CBE99B800EC440D /* GlobalFunctions */,
 				961436F41CB5697D0070A3DE /* NativeExtensions */,
-				968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -272,10 +276,7 @@
 		962633871C9EAB9D00F8402F /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				96FB6B2C1CBF743000EC440D /* TouchAuthentication */,
 				96138FD61CB6F3E3006274A5 /* KeychainWrapper */,
-				968717E51CB3F8A7006DCC87 /* WebViewManager */,
-				96FB6B3D1CBFB6E600EC440D /* ResourceFileManager.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -289,15 +290,15 @@
 			path = assets;
 			sourceTree = "<group>";
 		};
-		968717E51CB3F8A7006DCC87 /* WebViewManager */ = {
+		968717E51CB3F8A7006DCC87 /* WebViewService */ = {
 			isa = PBXGroup;
 			children = (
-				968717E61CB3F91C006DCC87 /* WebViewManager.swift */,
+				968717E61CB3F91C006DCC87 /* WebViewService.swift */,
 				968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */,
 				968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */,
 				964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */,
 			);
-			path = WebViewManager;
+			path = WebViewService;
 			sourceTree = "<group>";
 		};
 		96FB6B291CBE99B800EC440D /* GlobalFunctions */ = {
@@ -313,7 +314,6 @@
 			children = (
 				961B9DA61CB19B0000C609A6 /* TouchAuthentication.swift */,
 				96FB6B2D1CBF755500EC440D /* TouchErrors.swift */,
-				96FB6B311CBF788C00EC440D /* TouchArerts.swift */,
 			);
 			path = TouchAuthentication;
 			sourceTree = "<group>";
@@ -344,16 +344,10 @@
 			path = storyboards;
 			sourceTree = "<group>";
 		};
-		96FB6B4A1CC1249E00EC440D /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		96FB6B4B1CC125A900EC440D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B571CC12BDC00EC440D /* IndexWebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,6 +355,9 @@
 		96FB6B4C1CC125E000EC440D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B2C1CBF743000EC440D /* TouchAuthentication */,
+				96FB6B3D1CBFB6E600EC440D /* ResourceFileService.swift */,
+				968717E51CB3F8A7006DCC87 /* WebViewService */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -368,6 +365,7 @@
 		96FB6B4D1CC126D000EC440D /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B4F1CC12A3C00EC440D /* AuthStorage.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -375,8 +373,17 @@
 		96FB6B4E1CC1272700EC440D /* WebActivities */ = {
 			isa = PBXGroup;
 			children = (
+				96FB6B5C1CC1340500EC440D /* SafariActivity.swift */,
 			);
 			path = WebActivities;
+			sourceTree = "<group>";
+		};
+		96FB6B5B1CC1309C00EC440D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */,
+			);
+			path = extensions;
 			sourceTree = "<group>";
 		};
 		EEB9ECF69ABAEBD9A2F28F01 /* Pods */ = {
@@ -570,22 +577,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96FB6B321CBF788C00EC440D /* TouchArerts.swift in Sources */,
 				961436F61CB569C70070A3DE /* queryDictionary.swift in Sources */,
 				96FB6B2E1CBF755500EC440D /* TouchErrors.swift in Sources */,
 				962633961C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
-				968717E71CB3F91C006DCC87 /* WebViewManager.swift in Sources */,
+				968717E71CB3F91C006DCC87 /* WebViewService.swift in Sources */,
+				96FB6B5D1CC1340500EC440D /* SafariActivity.swift in Sources */,
 				968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 				96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */,
 				968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */,
-				961B9DA51CB11C5D00C609A6 /* IndexNativeController.swift in Sources */,
 				96138FDC1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */,
+				96FB6B501CC12A3C00EC440D /* AuthStorage.swift in Sources */,
 				968717ED1CB3FB05006DCC87 /* UserModel.swift in Sources */,
-				96FB6B3E1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */,
+				96FB6B3E1CBFB6E600EC440D /* ResourceFileService.swift in Sources */,
 				961B9DA71CB19B0000C609A6 /* TouchAuthentication.swift in Sources */,
+				96FB6B581CC12BDC00EC440D /* IndexWebView.swift in Sources */,
 				964EBF101CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -596,15 +604,17 @@
 			files = (
 				964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */,
 				96FB6B2F1CBF755500EC440D /* TouchErrors.swift in Sources */,
-				96FB6B331CBF788C00EC440D /* TouchArerts.swift in Sources */,
-				96FB6B3F1CBFB6E600EC440D /* ResourceFileManager.swift in Sources */,
+				96FB6B3F1CBFB6E600EC440D /* ResourceFileService.swift in Sources */,
 				96138FDD1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
-				968717FF1CB458DC006DCC87 /* WebViewManager.swift in Sources */,
+				968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */,
+				96FB6B511CC12A3C00EC440D /* AuthStorage.swift in Sources */,
 				968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
+				96FB6B591CC12BDC00EC440D /* IndexWebView.swift in Sources */,
 				961436F71CB56A6C0070A3DE /* queryDictionary.swift in Sources */,
 				964EBF111CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */,
+				96FB6B5E1CC1340500EC440D /* SafariActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,15 +624,17 @@
 			files = (
 				964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */,
 				96FB6B301CBF755500EC440D /* TouchErrors.swift in Sources */,
-				96FB6B341CBF788C00EC440D /* TouchArerts.swift in Sources */,
-				96FB6B401CBFB6E600EC440D /* ResourceFileManager.swift in Sources */,
+				96FB6B401CBFB6E600EC440D /* ResourceFileService.swift in Sources */,
 				96138FDE1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
-				968718001CB458DD006DCC87 /* WebViewManager.swift in Sources */,
+				968718001CB458DD006DCC87 /* WebViewService.swift in Sources */,
+				96FB6B521CC12A3C00EC440D /* AuthStorage.swift in Sources */,
 				968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,
+				96FB6B5A1CC12BDC00EC440D /* IndexWebView.swift in Sources */,
 				961436F81CB56A6C0070A3DE /* queryDictionary.swift in Sources */,
 				964EBF121CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */,
+				96FB6B5F1CC1340500EC440D /* SafariActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

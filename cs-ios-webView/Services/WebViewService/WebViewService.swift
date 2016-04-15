@@ -2,7 +2,7 @@
 import UIKit
 import WebKit
 
-class WebViewManager {
+class WebViewService {
     
     var webView: WKWebView
     var view: UIView

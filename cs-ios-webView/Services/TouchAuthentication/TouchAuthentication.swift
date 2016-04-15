@@ -20,7 +20,7 @@ class TouchAuthentication {
     let keychain = KeychainSwift()
     let authenticationContext = LAContext()
     var webView: WKWebView?
-    let resourceFileManager = ResourceFileManager()
+    let resourceFileManager = ResourceFileService()
     let injectorJsFile: String?
     
     init (AppName: String) {

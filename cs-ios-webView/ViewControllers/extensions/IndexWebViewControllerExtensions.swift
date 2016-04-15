@@ -50,7 +50,7 @@ extension IndexWebViewController {
             print("Loading DONE")
             self.progressView.setProgress(0.0, animated: false)
             if (!self.isWebViewLoaded) {
-                self.webViewManager?.layoutWebBrowsingElements()
+                self.webViewService?.layoutWebBrowsingElements()
                 self.isWebViewLoaded = true
             }
             

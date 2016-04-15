@@ -1,12 +1,5 @@
-//
-//  ResourceFileManager.swift
-//  cs-ios-webView
-//
-//  Created by Денис Дубинин on 4/14/16.
-//  Copyright © 2016 Denis Dubinin. All rights reserved.
-//
 
-struct ResourceFileManager {
+struct ResourceFileService {
     func getAsString (fileName: String, encoding: String) -> String? {
         if let filepath = NSBundle.mainBundle().pathForResource(fileName, ofType: encoding) {
             do {

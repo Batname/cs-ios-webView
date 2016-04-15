@@ -156,9 +156,7 @@
 		96138FEC1CB6F6DF006274A5 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				96138FD71CB6F42E006274A5 /* cs-ios-webView-Bridging-Header.h */,
-				96138FD81CB6F42E006274A5 /* cs-ios-webViewTests-Bridging-Header.h */,
-				96138FD91CB6F42E006274A5 /* cs-ios-webViewUITests-Bridging-Header.h */,
+				96FB6B421CC11FF600EC440D /* importObjectiveCHeaders */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -319,6 +317,16 @@
 				96FB6B3A1CBFB0C900EC440D /* injector.js */,
 			);
 			path = javascript;
+			sourceTree = "<group>";
+		};
+		96FB6B421CC11FF600EC440D /* importObjectiveCHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				96138FD71CB6F42E006274A5 /* cs-ios-webView-Bridging-Header.h */,
+				96138FD81CB6F42E006274A5 /* cs-ios-webViewTests-Bridging-Header.h */,
+				96138FD91CB6F42E006274A5 /* cs-ios-webViewUITests-Bridging-Header.h */,
+			);
+			path = importObjectiveCHeaders;
 			sourceTree = "<group>";
 		};
 		EEB9ECF69ABAEBD9A2F28F01 /* Pods */ = {
@@ -678,7 +686,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bat-dev.cs-ios-webView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "cs-ios-webView/SupportingFiles/cs-ios-webView-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "cs-ios-webView/SupportingFiles/importObjectiveCHeaders/cs-ios-webView-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -695,7 +703,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bat-dev.cs-ios-webView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "cs-ios-webView/SupportingFiles/cs-ios-webView-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "cs-ios-webView/SupportingFiles/importObjectiveCHeaders/cs-ios-webView-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

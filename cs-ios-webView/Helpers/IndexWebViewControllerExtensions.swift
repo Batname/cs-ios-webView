@@ -25,6 +25,9 @@ extension IndexWebViewController {
                 case "touchIdAuth"? :
                     self.auth.checkFingerPrint();
                     print("checkFingerPrint")
+                case "logout"? :
+                    self.auth.addAuthLink()
+                    print("logout")
                 default: break
             }
 

@@ -97,6 +97,29 @@ class TouchAuthentication {
             (success, error) -> Void in
             
             if success {
+                
+                if let (login, password, webView, injectorJsFile) = unwrap(NSUserDefaults.standardUserDefaults().valueForKey("userLogin"), self.keychain.get("userPassword"), self.webView, self.injectorJsFile)
+                {
+                    webView.evaluateJavaScript(injectorJsFile) { (result, error) in
+                        if error != nil {
+                            print(result)
+                        }
+                    }
+                    
+                    let touchAuthorizeJs:String
+                        = "(function () {\n" +
+                          "     var login = '\(login)';\n" +
+                          "     var password = '\(password)';\n" +
+                          "     var isCalled = false;\n" +
+                          "     function touchAuthorize (callback) {\n" +
+                          "         if (!isCalled) { callback(login, password); isCalled = true; }\n" +
+                          "     };\n" +
+                          "     window.rootScope.native.touchAuthorize = touchAuthorize;\n" +
+                          "})();\n"
+                    
+                    webView.evaluateJavaScript(touchAuthorizeJs, completionHandler: nil)
+                    
+                }
                 print("success touch id identifier")
             } else {
                 if let error = error {

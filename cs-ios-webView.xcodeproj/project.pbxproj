@@ -56,6 +56,15 @@
 		96FB6B5D1CC1340500EC440D /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B5C1CC1340500EC440D /* SafariActivity.swift */; };
 		96FB6B5E1CC1340500EC440D /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B5C1CC1340500EC440D /* SafariActivity.swift */; };
 		96FB6B5F1CC1340500EC440D /* SafariActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B5C1CC1340500EC440D /* SafariActivity.swift */; };
+		96FB6B611CC2514F00EC440D /* LocationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B601CC2514F00EC440D /* LocationValidator.swift */; };
+		96FB6B621CC2514F00EC440D /* LocationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B601CC2514F00EC440D /* LocationValidator.swift */; };
+		96FB6B631CC2514F00EC440D /* LocationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B601CC2514F00EC440D /* LocationValidator.swift */; };
+		96FB6B651CC251C500EC440D /* NotificationReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B641CC251C500EC440D /* NotificationReminder.swift */; };
+		96FB6B661CC251C500EC440D /* NotificationReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B641CC251C500EC440D /* NotificationReminder.swift */; };
+		96FB6B671CC251C500EC440D /* NotificationReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B641CC251C500EC440D /* NotificationReminder.swift */; };
+		96FB6B691CC2528A00EC440D /* WebViewMultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */; };
+		96FB6B6A1CC2528A00EC440D /* WebViewMultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */; };
+		96FB6B6B1CC2528A00EC440D /* WebViewMultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +121,9 @@
 		96FB6B4F1CC12A3C00EC440D /* AuthStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthStorage.swift; sourceTree = "<group>"; };
 		96FB6B571CC12BDC00EC440D /* IndexWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebView.swift; sourceTree = "<group>"; };
 		96FB6B5C1CC1340500EC440D /* SafariActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariActivity.swift; sourceTree = "<group>"; };
+		96FB6B601CC2514F00EC440D /* LocationValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationValidator.swift; sourceTree = "<group>"; };
+		96FB6B641CC251C500EC440D /* NotificationReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReminder.swift; sourceTree = "<group>"; };
+		96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewMultiView.swift; sourceTree = "<group>"; };
 		9D4CF13FCA9BF2F6AE667353 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D05DFD5A10A2472437784FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -297,6 +309,7 @@
 				968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */,
 				968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */,
 				964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */,
+				96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */,
 			);
 			path = WebViewService;
 			sourceTree = "<group>";
@@ -358,6 +371,8 @@
 				96FB6B2C1CBF743000EC440D /* TouchAuthentication */,
 				96FB6B3D1CBFB6E600EC440D /* ResourceFileService.swift */,
 				968717E51CB3F8A7006DCC87 /* WebViewService */,
+				96FB6B601CC2514F00EC440D /* LocationValidator.swift */,
+				96FB6B641CC251C500EC440D /* NotificationReminder.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -580,12 +595,14 @@
 				961436F61CB569C70070A3DE /* queryDictionary.swift in Sources */,
 				96FB6B2E1CBF755500EC440D /* TouchErrors.swift in Sources */,
 				962633961C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
+				96FB6B611CC2514F00EC440D /* LocationValidator.swift in Sources */,
 				968717E71CB3F91C006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B5D1CC1340500EC440D /* SafariActivity.swift in Sources */,
 				968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
 				968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 				96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */,
+				96FB6B651CC251C500EC440D /* NotificationReminder.swift in Sources */,
 				968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */,
 				96138FDC1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
 				968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */,
@@ -593,6 +610,7 @@
 				968717ED1CB3FB05006DCC87 /* UserModel.swift in Sources */,
 				96FB6B3E1CBFB6E600EC440D /* ResourceFileService.swift in Sources */,
 				961B9DA71CB19B0000C609A6 /* TouchAuthentication.swift in Sources */,
+				96FB6B691CC2528A00EC440D /* WebViewMultiView.swift in Sources */,
 				96FB6B581CC12BDC00EC440D /* IndexWebView.swift in Sources */,
 				964EBF101CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */,
 			);
@@ -602,10 +620,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FB6B6A1CC2528A00EC440D /* WebViewMultiView.swift in Sources */,
 				964EBF131CB6EAF9000A9899 /* TouchAuthentication.swift in Sources */,
 				96FB6B2F1CBF755500EC440D /* TouchErrors.swift in Sources */,
 				96FB6B3F1CBFB6E600EC440D /* ResourceFileService.swift in Sources */,
+				96FB6B621CC2514F00EC440D /* LocationValidator.swift in Sources */,
 				96138FDD1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
+				96FB6B661CC251C500EC440D /* NotificationReminder.swift in Sources */,
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B511CC12A3C00EC440D /* AuthStorage.swift in Sources */,
@@ -622,10 +643,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96FB6B6B1CC2528A00EC440D /* WebViewMultiView.swift in Sources */,
 				964EBF141CB6EAFA000A9899 /* TouchAuthentication.swift in Sources */,
 				96FB6B301CBF755500EC440D /* TouchErrors.swift in Sources */,
 				96FB6B401CBFB6E600EC440D /* ResourceFileService.swift in Sources */,
+				96FB6B631CC2514F00EC440D /* LocationValidator.swift in Sources */,
 				96138FDE1CB6F42E006274A5 /* KeychainWrapper.m in Sources */,
+				96FB6B671CC251C500EC440D /* NotificationReminder.swift in Sources */,
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968718001CB458DD006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B521CC12A3C00EC440D /* AuthStorage.swift in Sources */,

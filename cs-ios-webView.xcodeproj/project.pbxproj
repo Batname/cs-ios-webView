@@ -36,9 +36,9 @@
 		968717ED1CB3FB05006DCC87 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EC1CB3FB05006DCC87 /* UserModel.swift */; };
 		968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
 		968718001CB458DD006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
-		968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
-		968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
-		968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */; };
+		968718021CB45E47006DCC87 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* NavigationDelegate.swift */; };
+		968718031CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* NavigationDelegate.swift */; };
+		968718041CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968718011CB45E47006DCC87 /* NavigationDelegate.swift */; };
 		96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2A1CBE99FC00EC440D /* unwrap.swift */; };
 		96FB6B2E1CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
 		96FB6B2F1CBF755500EC440D /* TouchErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B2D1CBF755500EC440D /* TouchErrors.swift */; };
@@ -65,6 +65,9 @@
 		96FB6B691CC2528A00EC440D /* WebViewMultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */; };
 		96FB6B6A1CC2528A00EC440D /* WebViewMultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */; };
 		96FB6B6B1CC2528A00EC440D /* WebViewMultiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */; };
+		96FB6B6F1CC2640A00EC440D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B6E1CC2640A00EC440D /* Alerts.swift */; };
+		96FB6B701CC2640A00EC440D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B6E1CC2640A00EC440D /* Alerts.swift */; };
+		96FB6B711CC2640A00EC440D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B6E1CC2640A00EC440D /* Alerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +115,7 @@
 		968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewJsEvaluator.swift; sourceTree = "<group>"; };
 		968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
 		968717EC1CB3FB05006DCC87 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexWebViewControllerExtensions.swift; sourceTree = "<group>"; };
+		968718011CB45E47006DCC87 /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationDelegate.swift; path = "cs-ios-webView/ViewControllers/extensions/IndexWebViewController/NavigationDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		96FB6B2A1CBE99FC00EC440D /* unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unwrap.swift; sourceTree = "<group>"; };
 		96FB6B2D1CBF755500EC440D /* TouchErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchErrors.swift; sourceTree = "<group>"; };
 		96FB6B3A1CBFB0C900EC440D /* injector.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = injector.js; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 		96FB6B601CC2514F00EC440D /* LocationValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationValidator.swift; sourceTree = "<group>"; };
 		96FB6B641CC251C500EC440D /* NotificationReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReminder.swift; sourceTree = "<group>"; };
 		96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewMultiView.swift; sourceTree = "<group>"; };
+		96FB6B6E1CC2640A00EC440D /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		9D4CF13FCA9BF2F6AE667353 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D05DFD5A10A2472437784FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -396,9 +400,18 @@
 		96FB6B5B1CC1309C00EC440D /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				968718011CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift */,
+				96FB6B6D1CC263B300EC440D /* IndexWebViewController */,
 			);
 			path = extensions;
+			sourceTree = "<group>";
+		};
+		96FB6B6D1CC263B300EC440D /* IndexWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				968718011CB45E47006DCC87 /* NavigationDelegate.swift */,
+				96FB6B6E1CC2640A00EC440D /* Alerts.swift */,
+			);
+			path = IndexWebViewController;
 			sourceTree = "<group>";
 		};
 		EEB9ECF69ABAEBD9A2F28F01 /* Pods */ = {
@@ -598,7 +611,7 @@
 				96FB6B611CC2514F00EC440D /* LocationValidator.swift in Sources */,
 				968717E71CB3F91C006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B5D1CC1340500EC440D /* SafariActivity.swift in Sources */,
-				968718021CB45E47006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
+				968718021CB45E47006DCC87 /* NavigationDelegate.swift in Sources */,
 				968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 				96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */,
@@ -612,6 +625,7 @@
 				961B9DA71CB19B0000C609A6 /* TouchAuthentication.swift in Sources */,
 				96FB6B691CC2528A00EC440D /* WebViewMultiView.swift in Sources */,
 				96FB6B581CC12BDC00EC440D /* IndexWebView.swift in Sources */,
+				96FB6B6F1CC2640A00EC440D /* Alerts.swift in Sources */,
 				964EBF101CB6D229000A9899 /* WebViewNavigationCases.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,7 +644,8 @@
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B511CC12A3C00EC440D /* AuthStorage.swift in Sources */,
-				968718031CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
+				96FB6B701CC2640A00EC440D /* Alerts.swift in Sources */,
+				968718031CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
 				96FB6B591CC12BDC00EC440D /* IndexWebView.swift in Sources */,
 				961436F71CB56A6C0070A3DE /* queryDictionary.swift in Sources */,
@@ -653,7 +668,8 @@
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968718001CB458DD006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B521CC12A3C00EC440D /* AuthStorage.swift in Sources */,
-				968718041CB45E4C006DCC87 /* IndexWebViewControllerExtensions.swift in Sources */,
+				96FB6B711CC2640A00EC440D /* Alerts.swift in Sources */,
+				968718041CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,
 				96FB6B5A1CC12BDC00EC440D /* IndexWebView.swift in Sources */,
 				961436F81CB56A6C0070A3DE /* queryDictionary.swift in Sources */,

@@ -1,10 +1,6 @@
 import WebKit
 
 extension IndexWebViewController {
-    
-    func webView(webView: WKWebView, decidePolicyForNavigationResponse navigationResponse: WKNavigationResponse, decisionHandler: (WKNavigationResponsePolicy) -> Void) {
-        decisionHandler(.Allow)
-    }
 
     func webView(webView: WKWebView, decidePolicyForNavigationAction navigationAction: WKNavigationAction, decisionHandler: (WKNavigationActionPolicy) -> Void) {
         
@@ -40,43 +36,23 @@ extension IndexWebViewController {
         webView.evaluateJavaScript("window.embeddedNative = true;", completionHandler: nil)
     }
     
-    func webView(webView: WKWebView,
-        didStartProvisionalNavigation navigation: WKNavigation){
-            print("Loading START")
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation){
+        self.progressView.setProgress(0.0, animated: false)
+        if (!self.isWebViewLoaded) {
+            self.webViewService?.layoutWebBrowsingElements()
+            self.isWebViewLoaded = true
+        }
     }
     
-    func webView(webView: WKWebView,
-        didFinishNavigation navigation: WKNavigation){
-            print("Loading DONE")
-            self.progressView.setProgress(0.0, animated: false)
-            if (!self.isWebViewLoaded) {
-                self.webViewService?.layoutWebBrowsingElements()
-                self.isWebViewLoaded = true
-            }
-            
-            if let injectorJsFile = self.injectorJsFile {
-                webView.evaluateJavaScript(injectorJsFile) { (result, error) in
-                    if error != nil {
-                        print(result)
-                    }
-                }
-            }
+    func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation){
+        print("didStartProvisionalNavigation")
     }
-    
+
     func webView(webView: WKWebView, didFailNavigation navigation: WKNavigation!, withError error: NSError) {
-        print("error occurs during a committed mainframe navigation")
+        print("didFailNavigation")
     }
     
     func webView(webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: NSError) {
-        print("error occurs while starting to load data for the mainframe")
-    }
-    
-    func showAlertWithTitle (message: String) -> Void {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
-        
-        dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            self.presentViewController(alert, animated: true, completion: nil)
-        }
+        print("didFailProvisionalNavigation")
     }
 }

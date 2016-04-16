@@ -7,26 +7,8 @@ extension IndexWebViewController {
         if let url = navigationAction.request.URL where String(url.scheme) == "native" {
             decisionHandler(.Cancel)
             
-            switch url.host {
-                case "authorized"? :
-                    if let (login, password) = unwrap(url.queryDictionary?["login"]?.first, url.queryDictionary?["password"]?.first)
-                    {
-                       self.auth.saveAuthData(login: login, password: password)
-                    }
-                case "reauthenticated"? :
-                    print("reauthenticated")
-                case "notauthorized"? :
-                    self.auth.addAuthLink()
-                    print("notauthorized")
-                case "touchIdAuth"? :
-                    self.auth.checkFingerPrint();
-                    print("checkFingerPrint")
-                case "logout"? :
-                    self.auth.addAuthLink()
-                    print("logout")
-                default: break
-            }
-
+            let webViewNavigation = WebViewNavigation(url: url, auth: auth)
+            webViewNavigation.urlAction()
         }
         
         decisionHandler(.Allow)

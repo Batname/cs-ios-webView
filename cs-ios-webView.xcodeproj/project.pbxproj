@@ -32,7 +32,7 @@
 		968717E41CB3F5C0006DCC87 /* CasinoHeroesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E31CB3F5C0006DCC87 /* CasinoHeroesApi.swift */; };
 		968717E71CB3F91C006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
 		968717E91CB3F9B5006DCC87 /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
-		968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */; };
+		968717EB1CB3FA27006DCC87 /* WebViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */; };
 		968717ED1CB3FB05006DCC87 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EC1CB3FB05006DCC87 /* UserModel.swift */; };
 		968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
 		968718001CB458DD006DCC87 /* WebViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E61CB3F91C006DCC87 /* WebViewService.swift */; };
@@ -68,6 +68,8 @@
 		96FB6B6F1CC2640A00EC440D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B6E1CC2640A00EC440D /* Alerts.swift */; };
 		96FB6B701CC2640A00EC440D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B6E1CC2640A00EC440D /* Alerts.swift */; };
 		96FB6B711CC2640A00EC440D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B6E1CC2640A00EC440D /* Alerts.swift */; };
+		96FB6B721CC2F76500EC440D /* WebViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */; };
+		96FB6B731CC2F76600EC440D /* WebViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,7 +115,7 @@
 		968717E31CB3F5C0006DCC87 /* CasinoHeroesApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CasinoHeroesApi.swift; sourceTree = "<group>"; };
 		968717E61CB3F91C006DCC87 /* WebViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewService.swift; sourceTree = "<group>"; };
 		968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewJsEvaluator.swift; sourceTree = "<group>"; };
-		968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
+		968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewNavigation.swift; sourceTree = "<group>"; };
 		968717EC1CB3FB05006DCC87 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		968718011CB45E47006DCC87 /* NavigationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationDelegate.swift; path = "cs-ios-webView/ViewControllers/extensions/IndexWebViewController/NavigationDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		96FB6B2A1CBE99FC00EC440D /* unwrap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = unwrap.swift; sourceTree = "<group>"; };
@@ -311,7 +313,7 @@
 			children = (
 				968717E61CB3F91C006DCC87 /* WebViewService.swift */,
 				968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */,
-				968717EA1CB3FA27006DCC87 /* WebViewDelegate.swift */,
+				968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */,
 				964EBF0F1CB6D229000A9899 /* WebViewNavigationCases.swift */,
 				96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */,
 			);
@@ -612,7 +614,7 @@
 				968717E71CB3F91C006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B5D1CC1340500EC440D /* SafariActivity.swift in Sources */,
 				968718021CB45E47006DCC87 /* NavigationDelegate.swift in Sources */,
-				968717EB1CB3FA27006DCC87 /* WebViewDelegate.swift in Sources */,
+				968717EB1CB3FA27006DCC87 /* WebViewNavigation.swift in Sources */,
 				962633551C9EA88500F8402F /* AppDelegate.swift in Sources */,
 				96FB6B2B1CBE99FC00EC440D /* unwrap.swift in Sources */,
 				96FB6B651CC251C500EC440D /* NotificationReminder.swift in Sources */,
@@ -645,6 +647,7 @@
 				968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B511CC12A3C00EC440D /* AuthStorage.swift in Sources */,
 				96FB6B701CC2640A00EC440D /* Alerts.swift in Sources */,
+				96FB6B721CC2F76500EC440D /* WebViewNavigation.swift in Sources */,
 				968718031CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */,
 				9626336A1C9EA88500F8402F /* cs_ios_webViewTests.swift in Sources */,
 				96FB6B591CC12BDC00EC440D /* IndexWebView.swift in Sources */,
@@ -669,6 +672,7 @@
 				968718001CB458DD006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B521CC12A3C00EC440D /* AuthStorage.swift in Sources */,
 				96FB6B711CC2640A00EC440D /* Alerts.swift in Sources */,
+				96FB6B731CC2F76600EC440D /* WebViewNavigation.swift in Sources */,
 				968718041CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */,
 				962633751C9EA88500F8402F /* cs_ios_webViewUITests.swift in Sources */,
 				96FB6B5A1CC12BDC00EC440D /* IndexWebView.swift in Sources */,

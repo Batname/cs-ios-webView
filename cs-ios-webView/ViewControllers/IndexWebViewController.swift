@@ -4,11 +4,12 @@ import WebKit
 
 class IndexWebViewController: UIViewController, WKNavigationDelegate {
     
+    let dictionaryKey: (String) -> AnyObject? = NSBundle.mainBundle().objectForInfoDictionaryKey
     let webView: WKWebView
-    let auth = TouchAuthentication(AppName: NSBundle.mainBundle().objectForInfoDictionaryKey("AppName") as! String)
+    let auth: TouchAuthentication
     let resourceFileService = ResourceFileService()
-    let website = NSBundle.mainBundle().objectForInfoDictionaryKey("website") as! String
-    let userAgent = NSBundle.mainBundle().objectForInfoDictionaryKey("userAgent") as! String
+    let website: String
+    let userAgent: String
     
     var webViewService: WebViewService?
     var isWebViewLoaded: Bool = false
@@ -17,6 +18,9 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var progressView: UIProgressView!
     
     required init?(coder aDecoder: NSCoder) {
+        self.website = dictionaryKey("website") as! String
+        self.userAgent = dictionaryKey("userAgent") as! String
+        self.auth = TouchAuthentication(AppName: dictionaryKey("AppName") as! String)
         self.webView = WKWebView(frame: CGRectZero)
         super.init(coder: aDecoder)
     }

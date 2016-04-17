@@ -7,7 +7,6 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
     let dictionaryKey: (String) -> AnyObject? = NSBundle.mainBundle().objectForInfoDictionaryKey
     let webView: WKWebView
     let auth: TouchAuthentication
-    let resourceFileService = ResourceFileService()
     let website: String
     let userAgent: String
     
@@ -37,7 +36,7 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
         auth.alertCallbacks["showAlertWithTitle"] = showAlertWithTitle
         auth.webView = self.webView
 
-        injectorJsFile = self.resourceFileService.getAsString("injector", encoding: "js")
+        injectorJsFile = ResourceFileService.getAsString("injector", encoding: "js")
     }
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {

@@ -20,13 +20,12 @@ class TouchAuthentication {
     let keychain = KeychainSwift()
     let authenticationContext = LAContext()
     var webView: WKWebView?
-    let resourceFileManager = ResourceFileService()
     let injectorJsFile: String?
     
     init (AppName: String) {
         self.AppName = AppName
         NSUserDefaults.standardUserDefaults().setValue(AppName, forKey: "appName")
-        self.injectorJsFile = resourceFileManager.getAsString("injector", encoding: "js")
+        self.injectorJsFile = ResourceFileService.getAsString("injector", encoding: "js")
     }
     
     func saveAuthData (login login: String, password: String) {

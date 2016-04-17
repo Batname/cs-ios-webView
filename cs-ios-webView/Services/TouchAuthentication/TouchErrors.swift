@@ -1,10 +1,3 @@
-//
-//  TouchErrors.swift
-//  cs-ios-webView
-//
-//  Created by Денис Дубинин on 4/14/16.
-//  Copyright © 2016 Denis Dubinin. All rights reserved.
-//
 
 import LocalAuthentication
 

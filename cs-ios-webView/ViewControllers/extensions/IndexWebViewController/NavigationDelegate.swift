@@ -7,7 +7,7 @@ extension IndexWebViewController {
         if let url = navigationAction.request.URL where String(url.scheme) == "native" {
             decisionHandler(.Cancel)
             
-            let webViewNavigation = WebViewNavigation(url: url, auth: auth)
+            let webViewNavigation = WebViewNavigation(url: url, auth: auth, webView: webView)
             webViewNavigation.urlAction()
         }
         

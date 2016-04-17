@@ -70,6 +70,8 @@
 		96FB6B711CC2640A00EC440D /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB6B6E1CC2640A00EC440D /* Alerts.swift */; };
 		96FB6B721CC2F76500EC440D /* WebViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */; };
 		96FB6B731CC2F76600EC440D /* WebViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */; };
+		96FB6B741CC3A6E000EC440D /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
+		96FB6B751CC3A6E100EC440D /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -646,6 +648,7 @@
 				962633971C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968717FF1CB458DC006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B511CC12A3C00EC440D /* AuthStorage.swift in Sources */,
+				96FB6B741CC3A6E000EC440D /* WebViewJsEvaluator.swift in Sources */,
 				96FB6B701CC2640A00EC440D /* Alerts.swift in Sources */,
 				96FB6B721CC2F76500EC440D /* WebViewNavigation.swift in Sources */,
 				968718031CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */,
@@ -671,6 +674,7 @@
 				962633981C9EBCBE00F8402F /* IndexWebViewController.swift in Sources */,
 				968718001CB458DD006DCC87 /* WebViewService.swift in Sources */,
 				96FB6B521CC12A3C00EC440D /* AuthStorage.swift in Sources */,
+				96FB6B751CC3A6E100EC440D /* WebViewJsEvaluator.swift in Sources */,
 				96FB6B711CC2640A00EC440D /* Alerts.swift in Sources */,
 				96FB6B731CC2F76600EC440D /* WebViewNavigation.swift in Sources */,
 				968718041CB45E4C006DCC87 /* NavigationDelegate.swift in Sources */,

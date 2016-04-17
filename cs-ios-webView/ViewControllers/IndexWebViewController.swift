@@ -12,7 +12,6 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
     
     var webViewService: WebViewService?
     var isWebViewLoaded: Bool = false
-    var injectorJsFile: String?
     
     @IBOutlet weak var progressView: UIProgressView!
     
@@ -36,7 +35,6 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
         auth.alertCallbacks["showAlertWithTitle"] = showAlertWithTitle
         auth.webView = self.webView
 
-        injectorJsFile = ResourceFileService.getAsString("injector", encoding: "js")
     }
     
     override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {

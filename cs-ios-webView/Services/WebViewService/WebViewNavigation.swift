@@ -1,23 +1,26 @@
 import WebKit
+import Stencil
 
 class WebViewNavigation {
     
     let auth: TouchAuthentication
     let url: NSURL
     var webView: WKWebView
-    private let injectorJsFile: String?
     
     init(url: NSURL, auth: TouchAuthentication, webView: WKWebView) {
         self.url = url
         self.auth = auth
         self.webView = webView
-        self.injectorJsFile = ResourceFileService.getAsString("injector", encoding: "js")
     }
     
     func urlAction () {
-    
-        if let injectorJsFile = self.injectorJsFile {
-            webView.evaluateJavaScript(injectorJsFile, completionHandler: WebViewJsEvaluator.errorHandler)
+        
+        do {
+            let template = try Template(named: "injector.js")
+            let rendered = try template.render()
+            webView.evaluateJavaScript(rendered, completionHandler: WebViewJsEvaluator.errorHandler)
+        } catch {
+            print("Failed to render template \(error)")
         }
         
         switch url.host {

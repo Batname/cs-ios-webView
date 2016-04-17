@@ -1,6 +1,5 @@
 
 import LocalAuthentication
-import KeychainSwift
 import WebKit
 
 class TouchAuthentication {
@@ -8,20 +7,20 @@ class TouchAuthentication {
     typealias alertCbClosure = (String) -> Void
 
     private let AppName: String
-    private let keychain = KeychainSwift()
     private let authenticationContext = LAContext()
+    private var authStorage = AuthStorage()
     
     var alertCallbacks: Dictionary<String, alertCbClosure> = [:]
     var webView: WKWebView?
     
     init (AppName: String) {
         self.AppName = AppName
-        NSUserDefaults.standardUserDefaults().setValue(AppName, forKey: "appName")
+        authStorage.AppName = AppName
     }
     
     private func checkCredentialCorrectly (login: String, password: String) -> Bool {
-        if login == NSUserDefaults.standardUserDefaults().valueForKey("userLogin") as? String &&
-            password == keychain.get("userPassword")! as String {
+        if login == authStorage.login &&
+            password == authStorage.password {
                 return true
         } else {
             return false
@@ -36,8 +35,8 @@ class TouchAuthentication {
     }
     
     private func checkCredentialAvailability () -> Bool {
-        if NSUserDefaults.standardUserDefaults().valueForKey("userLogin") != nil &&
-            keychain.get("userPassword") != nil {
+        if authStorage.login != nil &&
+            authStorage.password != nil {
                 return true
         } else {
             return false
@@ -54,8 +53,8 @@ class TouchAuthentication {
             print("login exists")
             return
         } else {
-            keychain.set(password, forKey: "userPassword")
-            NSUserDefaults.standardUserDefaults().setValue(login, forKey: "userLogin")
+            authStorage.password = password
+            authStorage.login = login
         }
     }
     
@@ -69,7 +68,7 @@ class TouchAuthentication {
         authenticationContext.evaluatePolicy(.DeviceOwnerAuthentication, localizedReason: "Casino heroes auth here", reply: {
             (success, error) -> Void in
             
-            if let (login, password, webView) = unwrap(NSUserDefaults.standardUserDefaults().valueForKey("userLogin"), self.keychain.get("userPassword"), self.webView) where success {
+            if let (login, password, webView) = unwrap(self.authStorage.login, self.authStorage.password, self.webView) where success {
                     
                 let touchAuthorizeJs:String
                     = "(function () {\n" +

@@ -26,7 +26,7 @@ class IndexWebViewController: UIViewController, WKNavigationDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         webViewService = WebViewService(webView: webView, view: view)
         webView.customUserAgent = userAgent
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .New, context: nil)

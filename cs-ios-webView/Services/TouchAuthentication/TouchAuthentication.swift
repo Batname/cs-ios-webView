@@ -1,6 +1,7 @@
 
 import LocalAuthentication
 import WebKit
+import Stencil
 
 class TouchAuthentication {
 
@@ -69,20 +70,17 @@ class TouchAuthentication {
             (success, error) -> Void in
             
             if let (login, password, webView) = unwrap(self.authStorage.login, self.authStorage.password, self.webView) where success {
-                    
-                let touchAuthorizeJs:String
-                    = "(function () {\n" +
-                        "     var login = '\(login)';\n" +
-                        "     var password = '\(password)';\n" +
-                        "     var isCalled = false;\n" +
-                        "     function touchAuthorize (callback) {\n" +
-                        "         if (!isCalled) { callback(login, password); isCalled = true; }\n" +
-                        "     };\n" +
-                        "     window.rootScope.native.touchAuthorize = touchAuthorize;\n" +
-                        "})();\n"
-                    
-                webView.evaluateJavaScript(touchAuthorizeJs, completionHandler: WebViewJsEvaluator.errorHandler)
-                    
+                
+                let context = Context(dictionary:["password": password, "login": login])
+                
+                do {
+                    let template = try Template(named: "touchAuthorize.js")
+                    let rendered = try template.render(context)
+                    webView.evaluateJavaScript(rendered, completionHandler: WebViewJsEvaluator.errorHandler)
+                } catch {
+                    print("Failed to render template \(error)")
+                }
+                
             } else {
                 if let error = error {
                     let message = self.errorMessageForLAErrorCode(error.code)

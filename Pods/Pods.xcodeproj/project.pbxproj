@@ -7,86 +7,164 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023D9E2B24A050BCE1A35DF8F7EEC1C3 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBC97537579D1792918B21CD408B6D9 /* TegKeychainConstants.swift */; };
-		0491A04C9403E6CEC3519FBB38F02863 /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 022A2F652604C8EFB78074B68AF396BB /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		178A0D8F8808F6D33DEE63F4AAB858A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		2E4076ED0DAF1385CCE53C88BFD80E8C /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E97BE41D443D7641693B53D2AF2244E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E79EF9A7096E3AB32826492A9A997 /* Keychain.swift */; };
-		40A3157EF9DCE6B16FC5F783BC51732B /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CA8116C4080565D46B4A808DAA9754 /* KeychainAccess-dummy.m */; };
-		4C5B68C9D3C21E43DC96A39DF90ED498 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E93FF9AEE1E77666DBDE865AB2D7BC /* KeychainSwiftAccessOptions.swift */; };
-		55F9FBC65B032F0CBEB48157A3BFD594 /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45C97BB318C1541BAF527D8373358E66 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74D9BC287FBC1CF7A72D31D2A1AB50F4 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA58D3D62A8F6AB8B2DDE8C6CA1E027 /* KeychainSwift.swift */; };
-		7FED37EC0151F0C922A589F3E7FDA775 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
-		9310F4B12ED0840040DD866F9247BB2F /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2291912FE05F8D127394BC207A8EB5 /* KeychainSwift-dummy.m */; };
-		BC2D452989C789112A08B18111BBF0DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		CD0BBE84DD5602EBB347AB37196AF382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		023D9E2B24A050BCE1A35DF8F7EEC1C3 /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC888FD7FD869A12710790253D5EC6BE /* TegKeychainConstants.swift */; };
+		0491A04C9403E6CEC3519FBB38F02863 /* KeychainSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D4179FCA93ED6D14FB2A76EDF9F94B61 /* KeychainSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057F48C0C6816DF2474A5C289641BC86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744AA6B43F1BE22F8CDAD43947A7DCD6 /* Foundation.framework */; };
+		0B5A11EAC009A8928BD11124201C8CCF /* TemplateLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232F0352829F1817606861F7A2565C4C /* TemplateLoader.swift */; };
+		0C9E373C554A6F6AE32C50B9FFEB6F05 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEBB577FAED0634936657243535AE9A /* Context.swift */; };
+		0FAF79F5E807EF2E80A7344EA09E6F56 /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732C6C9A1BE62460F3E7E64E449357C6 /* Template.swift */; };
+		168637005393EF809893A0A89C6782B2 /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1545799AD0498C81B7AF105C4EFC06B /* Tokenizer.swift */; };
+		172B2049119A38392F11F3BC2C47B7A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744AA6B43F1BE22F8CDAD43947A7DCD6 /* Foundation.framework */; };
+		1C573C7309201B04D0B6F3C0120BC52E /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC246A9ACF11876D80FFE3404F267DB /* Parser.swift */; };
+		21E000387A093C76D06321BF3BC9E425 /* PathKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A589E7AAABE37AF8245D96BCEEBF372E /* PathKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BD2933B70CED263FDA0C44D499134CA /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E97BE41D443D7641693B53D2AF2244E /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E0E22CADB9FF8C703D885694B0F33 /* Keychain.swift */; };
+		40A3157EF9DCE6B16FC5F783BC51732B /* KeychainAccess-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5118950A0201456CA139991E10A06134 /* KeychainAccess-dummy.m */; };
+		4550D4701A01A80222745AAC642893C6 /* Stencil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9238305708873FB3FA9FAE86CCCA16B7 /* Stencil-dummy.m */; };
+		4870DFBB45F5C1CD45FC53F4636CF61F /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C6034801F4D8D0055710FBF45A611F /* Namespace.swift */; };
+		4C5B68C9D3C21E43DC96A39DF90ED498 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18192F398C0C54EC94BCFFC6556A3E73 /* KeychainSwiftAccessOptions.swift */; };
+		55F9FBC65B032F0CBEB48157A3BFD594 /* KeychainAccess-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 765E7FE17528C36CAEC266C59751A713 /* KeychainAccess-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AD9BF45D2B6B2F229E83676D42B28E0 /* Stencil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1652BEC48871A44248A39753CAE53FB0 /* Stencil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61066C23C487A6CF4220823ABC7076B3 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43FF143F04C386E0875397135F425B1 /* Lexer.swift */; };
+		707652FE7E3B5EACB13CEBE6F47A075E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744AA6B43F1BE22F8CDAD43947A7DCD6 /* Foundation.framework */; };
+		74D9BC287FBC1CF7A72D31D2A1AB50F4 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972020AF4A8AC9DD44BF9DC89A95D4D5 /* KeychainSwift.swift */; };
+		75C788377CF16D7BFF76F172C3D7D3A5 /* Include.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88D2E4207AED3865870C6FCD26867E0 /* Include.swift */; };
+		790DA773FCBB81AD7A9ADF0B7F86C66A /* PathKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193F4186D5C2149E192369F6D185F73D /* PathKit.swift */; };
+		8962A0320CFD8419CFACD8C8FE8EFE31 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E66CBBE48868110809C976D5A3C58 /* Node.swift */; };
+		9310F4B12ED0840040DD866F9247BB2F /* KeychainSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD1816A189EADB8BEAA61229D0938BD /* KeychainSwift-dummy.m */; };
+		A328154BCF5D5E9C3D8E17ED4998F948 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A631C70FDC4BAA15E3564FD908CA0952 /* Filters.swift */; };
+		AD99C9804569089CB0E883B7D50C96A6 /* PathKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F65BBB0A63E2412BD427C85EAA14F03 /* PathKit.framework */; };
+		B033A405789DB6FBCAC5005804C9C32A /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		BC2D452989C789112A08B18111BBF0DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744AA6B43F1BE22F8CDAD43947A7DCD6 /* Foundation.framework */; };
+		C4C24EA95D877B0E0449A5F2370E0FDA /* Inheritence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AE830D3BA4E6018D67103166732E9E /* Inheritence.swift */; };
+		CD0BBE84DD5602EBB347AB37196AF382 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744AA6B43F1BE22F8CDAD43947A7DCD6 /* Foundation.framework */; };
+		CF23C405B39C4E2D0DA4DC19FEC1335D /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF915617F295FD52D9227EFCD454F9A /* Variable.swift */; };
+		DCE6244F4798467314F0547A1598949D /* PathKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C6D9F2CD78B816DA3A59DB430081A2 /* PathKit-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9E5E9012FE2E31378D9CDAC82AFA586B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C698C648EE4D43C6B8BE0BE1FE91737;
-			remoteInfo = KeychainSwift;
-		};
-		A6959EDBDDA25A34A26AAFE7DF0784A9 /* PBXContainerItemProxy */ = {
+		379393F27AD20DC41D5E64185087B740 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 838A2C6DA366DE138E5FDF1AF19D94C0;
 			remoteInfo = KeychainAccess;
 		};
+		42108A219320B06DDBB84BD766B1FCC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 736BF6C57071ED189895812D17ABE61E;
+			remoteInfo = Stencil;
+		};
+		726A3AA924F8CF50478E03C107210B68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DBBC6BB5AD1EBD4E9C618B36F18963;
+			remoteInfo = PathKit;
+		};
+		D4C927D306F968F46A6741F613E60156 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8DBBC6BB5AD1EBD4E9C618B36F18963;
+			remoteInfo = PathKit;
+		};
+		F4FE095587205A40E70CBE6CE04FE69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C698C648EE4D43C6B8BE0BE1FE91737;
+			remoteInfo = KeychainSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		022A2F652604C8EFB78074B68AF396BB /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
-		1E0846A4125FE8D7C6B827C723BB53E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AA58D3D62A8F6AB8B2DDE8C6CA1E027 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = KeychainSwift/KeychainSwift.swift; sourceTree = "<group>"; };
+		1652BEC48871A44248A39753CAE53FB0 /* Stencil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stencil-umbrella.h"; sourceTree = "<group>"; };
+		16D0FF56EFDF9920309246F02E2AAE7F /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18192F398C0C54EC94BCFFC6556A3E73 /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = KeychainSwift/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		193F4186D5C2149E192369F6D185F73D /* PathKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathKit.swift; path = Sources/PathKit.swift; sourceTree = "<group>"; };
+		1AF049321635AF8DA275A7456CAA9320 /* Stencil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Stencil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BEBB577FAED0634936657243535AE9A /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Sources/Context.swift; sourceTree = "<group>"; };
+		22C6034801F4D8D0055710FBF45A611F /* Namespace.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Namespace.swift; path = Sources/Namespace.swift; sourceTree = "<group>"; };
+		232F0352829F1817606861F7A2565C4C /* TemplateLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TemplateLoader.swift; path = Sources/TemplateLoader.swift; sourceTree = "<group>"; };
 		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
-		3BBC97537579D1792918B21CD408B6D9 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = KeychainSwift/TegKeychainConstants.swift; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		42E93FF9AEE1E77666DBDE865AB2D7BC /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = KeychainSwift/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
-		45C97BB318C1541BAF527D8373358E66 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
-		4C03DD99A7CE9F4D6F5DAD0B4EF07441 /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		608DE14821B85AEE2FFA8456A2203444 /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
-		7232BD7D1DEAE87488C1ED86C49B73AD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74CA8116C4080565D46B4A808DAA9754 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		2C377663FEDE6361FAE723B043823FB8 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		322E66CBBE48868110809C976D5A3C58 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = "<group>"; };
+		35BD321BC2E47F0C0DF70162A19FFA86 /* KeychainSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainSwift.xcconfig; sourceTree = "<group>"; };
+		3CB7596EF3D28FC95E727EA875D78152 /* PathKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PathKit.xcconfig; sourceTree = "<group>"; };
+		463DB872AFF3E970D7A5AFAF076F8322 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C6D9F2CD78B816DA3A59DB430081A2 /* PathKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PathKit-dummy.m"; sourceTree = "<group>"; };
+		5118950A0201456CA139991E10A06134 /* KeychainAccess-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainAccess-dummy.m"; sourceTree = "<group>"; };
+		53B8F6795471B8250685F8CED9C90E04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D7B2530A0F1CB283D12CC48D198675B /* KeychainAccess.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainAccess.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F65BBB0A63E2412BD427C85EAA14F03 /* PathKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PathKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6410EC6D17D3531FF460B838251476FF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		706496BD599338D0683E53787B26257D /* PathKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PathKit.modulemap; sourceTree = "<group>"; };
+		719E0E22CADB9FF8C703D885694B0F33 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		732C6C9A1BE62460F3E7E64E449357C6 /* Template.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Template.swift; path = Sources/Template.swift; sourceTree = "<group>"; };
+		744AA6B43F1BE22F8CDAD43947A7DCD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		765E7FE17528C36CAEC266C59751A713 /* KeychainAccess-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-umbrella.h"; sourceTree = "<group>"; };
 		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		85778A63D96C6CE8CA123446ADC759FF /* Stencil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Stencil.modulemap; sourceTree = "<group>"; };
 		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
 		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		918F870DB6A76DE686053305605C8428 /* KeychainAccess.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeychainAccess.xcconfig; sourceTree = "<group>"; };
+		8B422724EC8C2978A1CF7029DEA0261F /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
+		9238305708873FB3FA9FAE86CCCA16B7 /* Stencil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stencil-dummy.m"; sourceTree = "<group>"; };
+		972020AF4A8AC9DD44BF9DC89A95D4D5 /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = KeychainSwift/KeychainSwift.swift; sourceTree = "<group>"; };
 		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		9EE931C92FD98243EAF35F477BD1E900 /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
-		9F2291912FE05F8D127394BC207A8EB5 /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
-		A2AC03972FC4F6D9B524A264FDB18777 /* KeychainAccess.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainAccess.modulemap; sourceTree = "<group>"; };
-		AAC693FCB4C78AEFE9FF7780A87CECC0 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B29E8C28AF4621FA2DC948999CAB64E8 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		9EC246A9ACF11876D80FFE3404F267DB /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Parser.swift; sourceTree = "<group>"; };
+		A1545799AD0498C81B7AF105C4EFC06B /* Tokenizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tokenizer.swift; path = Sources/Tokenizer.swift; sourceTree = "<group>"; };
+		A589E7AAABE37AF8245D96BCEEBF372E /* PathKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PathKit-umbrella.h"; sourceTree = "<group>"; };
+		A631C70FDC4BAA15E3564FD908CA0952 /* Filters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filters.swift; path = Sources/Filters.swift; sourceTree = "<group>"; };
+		A6F25DBCAB22CAC7C284FAE059942240 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC888FD7FD869A12710790253D5EC6BE /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = KeychainSwift/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		AF1A8EEC458C64A8CA333AD31D6282C2 /* PathKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PathKit-prefix.pch"; sourceTree = "<group>"; };
+		B88D2E4207AED3865870C6FCD26867E0 /* Include.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Include.swift; path = Sources/Include.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BEE68838BAA1A3A09827195AA099EC4E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D4179FCA93ED6D14FB2A76EDF9F94B61 /* KeychainSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-umbrella.h"; sourceTree = "<group>"; };
+		D5B5266EF7709BD5EAD82706BEDA74E7 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D963C40842B92F852C7932E495C74FEA /* Stencil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stencil.xcconfig; sourceTree = "<group>"; };
 		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		E0098C2F787083BDCBEB2E4A84998BDE /* KeychainSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainSwift-prefix.pch"; sourceTree = "<group>"; };
+		E716970AD63E456FDC09F8EA9B205A51 /* Stencil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stencil-prefix.pch"; sourceTree = "<group>"; };
 		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F03B45F51ACEB339F942E92C72813289 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
-		FA6E79EF9A7096E3AB32826492A9A997 /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Lib/KeychainAccess/Keychain.swift; sourceTree = "<group>"; };
+		EAC6C8CD814B55677B94B4CFFC6AD726 /* KeychainAccess-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeychainAccess-prefix.pch"; sourceTree = "<group>"; };
+		EDD1816A189EADB8BEAA61229D0938BD /* KeychainSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeychainSwift-dummy.m"; sourceTree = "<group>"; };
+		EFF915617F295FD52D9227EFCD454F9A /* Variable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Variable.swift; path = Sources/Variable.swift; sourceTree = "<group>"; };
+		F0006EB97291E84089B3EB8E7A920021 /* KeychainSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KeychainSwift.modulemap; sourceTree = "<group>"; };
+		F43FF143F04C386E0875397135F425B1 /* Lexer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lexer.swift; path = Sources/Lexer.swift; sourceTree = "<group>"; };
+		F9AE830D3BA4E6018D67103166732E9E /* Inheritence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Inheritence.swift; path = Sources/Inheritence.swift; sourceTree = "<group>"; };
+		FDDE3666D7046001FC6748D581EFE41D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		311B6DE33629A6A7A31D33F2A3E7020B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				057F48C0C6816DF2474A5C289641BC86 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36A9B59E9D6B984771C4C7A345A071C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707652FE7E3B5EACB13CEBE6F47A075E /* Foundation.framework in Frameworks */,
+				AD99C9804569089CB0E883B7D50C96A6 /* PathKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37C0D1127616471731E1C52A48FE9D07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CD0BBE84DD5602EBB347AB37196AF382 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1B00AEB2074A7D2603061F51D64ECEB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				178A0D8F8808F6D33DEE63F4AAB858A7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,31 +176,94 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E81CA4F7662CF4E01CC82D01F54616A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				172B2049119A38392F11F3BC2C47B7A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22ADB28FDF7D11924BA5C851C3AC6BD6 /* Products */ = {
+		19E957657A4453DE719CADF989395352 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C03DD99A7CE9F4D6F5DAD0B4EF07441 /* KeychainAccess.framework */,
-				AAC693FCB4C78AEFE9FF7780A87CECC0 /* KeychainSwift.framework */,
-				1E0846A4125FE8D7C6B827C723BB53E7 /* Pods.framework */,
+				FDDE3666D7046001FC6748D581EFE41D /* Info.plist */,
+				85778A63D96C6CE8CA123446ADC759FF /* Stencil.modulemap */,
+				D963C40842B92F852C7932E495C74FEA /* Stencil.xcconfig */,
+				9238305708873FB3FA9FAE86CCCA16B7 /* Stencil-dummy.m */,
+				E716970AD63E456FDC09F8EA9B205A51 /* Stencil-prefix.pch */,
+				1652BEC48871A44248A39753CAE53FB0 /* Stencil-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Stencil";
 			sourceTree = "<group>";
 		};
-		5A777A6163D8D71A23D752AE79B48580 /* Support Files */ = {
+		1CB9861830028814320E84F9CF1EB6BC /* KeychainAccess */ = {
 			isa = PBXGroup;
 			children = (
-				7232BD7D1DEAE87488C1ED86C49B73AD /* Info.plist */,
-				B29E8C28AF4621FA2DC948999CAB64E8 /* KeychainSwift.modulemap */,
-				608DE14821B85AEE2FFA8456A2203444 /* KeychainSwift.xcconfig */,
-				9F2291912FE05F8D127394BC207A8EB5 /* KeychainSwift-dummy.m */,
-				9EE931C92FD98243EAF35F477BD1E900 /* KeychainSwift-prefix.pch */,
-				022A2F652604C8EFB78074B68AF396BB /* KeychainSwift-umbrella.h */,
+				719E0E22CADB9FF8C703D885694B0F33 /* Keychain.swift */,
+				8069E4DCB5412A8718CB511E7AE6A8B2 /* Support Files */,
+			);
+			path = KeychainAccess;
+			sourceTree = "<group>";
+		};
+		3C88F11824235FD4C8869515576F9D84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				53B8F6795471B8250685F8CED9C90E04 /* Info.plist */,
+				F0006EB97291E84089B3EB8E7A920021 /* KeychainSwift.modulemap */,
+				35BD321BC2E47F0C0DF70162A19FFA86 /* KeychainSwift.xcconfig */,
+				EDD1816A189EADB8BEAA61229D0938BD /* KeychainSwift-dummy.m */,
+				E0098C2F787083BDCBEB2E4A84998BDE /* KeychainSwift-prefix.pch */,
+				D4179FCA93ED6D14FB2A76EDF9F94B61 /* KeychainSwift-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KeychainSwift";
+			sourceTree = "<group>";
+		};
+		5FD5190408BE744EA485C28353BDAE81 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				744AA6B43F1BE22F8CDAD43947A7DCD6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		68A2574CBE657BD1196DFBB5D34B369E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6F25DBCAB22CAC7C284FAE059942240 /* Info.plist */,
+				706496BD599338D0683E53787B26257D /* PathKit.modulemap */,
+				3CB7596EF3D28FC95E727EA875D78152 /* PathKit.xcconfig */,
+				50C6D9F2CD78B816DA3A59DB430081A2 /* PathKit-dummy.m */,
+				AF1A8EEC458C64A8CA333AD31D6282C2 /* PathKit-prefix.pch */,
+				A589E7AAABE37AF8245D96BCEEBF372E /* PathKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PathKit";
+			sourceTree = "<group>";
+		};
+		6E4A51816D9EC6EDFBF7B7D1390E50F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CB9861830028814320E84F9CF1EB6BC /* KeychainAccess */,
+				955B312CEB5C87CAFFB761B7AC8A7425 /* KeychainSwift */,
+				A0F33199C1C1B3ABD1E624CB7000DD29 /* PathKit */,
+				AA33A1C35D649CD3A19438C83C2E2695 /* Stencil */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		725E0D940652E1ABEF1CEECC49A682DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F65BBB0A63E2412BD427C85EAA14F03 /* PathKit.framework */,
+				5FD5190408BE744EA485C28353BDAE81 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
@@ -143,58 +284,69 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		7A129A741C21A9B6E68042AC003F64B5 /* Pods */ = {
+		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				8BA723F0F23467E13F96D8D233A64D12 /* KeychainAccess */,
-				AD9626524756FA9F1DEAD066D460C3A9 /* KeychainSwift */,
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				725E0D940652E1ABEF1CEECC49A682DB /* Frameworks */,
+				6E4A51816D9EC6EDFBF7B7D1390E50F3 /* Pods */,
+				C130A143B41AC17AA345CA44E503C15A /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
 			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
-		7C89E017248386C4650271B7BCEB90FC /* Support Files */ = {
+		8069E4DCB5412A8718CB511E7AE6A8B2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BEE68838BAA1A3A09827195AA099EC4E /* Info.plist */,
-				A2AC03972FC4F6D9B524A264FDB18777 /* KeychainAccess.modulemap */,
-				918F870DB6A76DE686053305605C8428 /* KeychainAccess.xcconfig */,
-				74CA8116C4080565D46B4A808DAA9754 /* KeychainAccess-dummy.m */,
-				F03B45F51ACEB339F942E92C72813289 /* KeychainAccess-prefix.pch */,
-				45C97BB318C1541BAF527D8373358E66 /* KeychainAccess-umbrella.h */,
+				463DB872AFF3E970D7A5AFAF076F8322 /* Info.plist */,
+				8B422724EC8C2978A1CF7029DEA0261F /* KeychainAccess.modulemap */,
+				2C377663FEDE6361FAE723B043823FB8 /* KeychainAccess.xcconfig */,
+				5118950A0201456CA139991E10A06134 /* KeychainAccess-dummy.m */,
+				EAC6C8CD814B55677B94B4CFFC6AD726 /* KeychainAccess-prefix.pch */,
+				765E7FE17528C36CAEC266C59751A713 /* KeychainAccess-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/KeychainAccess";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		955B312CEB5C87CAFFB761B7AC8A7425 /* KeychainSwift */ = {
 			isa = PBXGroup;
 			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				7A129A741C21A9B6E68042AC003F64B5 /* Pods */,
-				22ADB28FDF7D11924BA5C851C3AC6BD6 /* Products */,
-				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8BA723F0F23467E13F96D8D233A64D12 /* KeychainAccess */ = {
-			isa = PBXGroup;
-			children = (
-				FA6E79EF9A7096E3AB32826492A9A997 /* Keychain.swift */,
-				7C89E017248386C4650271B7BCEB90FC /* Support Files */,
-			);
-			path = KeychainAccess;
-			sourceTree = "<group>";
-		};
-		AD9626524756FA9F1DEAD066D460C3A9 /* KeychainSwift */ = {
-			isa = PBXGroup;
-			children = (
-				2AA58D3D62A8F6AB8B2DDE8C6CA1E027 /* KeychainSwift.swift */,
-				42E93FF9AEE1E77666DBDE865AB2D7BC /* KeychainSwiftAccessOptions.swift */,
-				3BBC97537579D1792918B21CD408B6D9 /* TegKeychainConstants.swift */,
-				5A777A6163D8D71A23D752AE79B48580 /* Support Files */,
+				972020AF4A8AC9DD44BF9DC89A95D4D5 /* KeychainSwift.swift */,
+				18192F398C0C54EC94BCFFC6556A3E73 /* KeychainSwiftAccessOptions.swift */,
+				AC888FD7FD869A12710790253D5EC6BE /* TegKeychainConstants.swift */,
+				3C88F11824235FD4C8869515576F9D84 /* Support Files */,
 			);
 			path = KeychainSwift;
+			sourceTree = "<group>";
+		};
+		A0F33199C1C1B3ABD1E624CB7000DD29 /* PathKit */ = {
+			isa = PBXGroup;
+			children = (
+				193F4186D5C2149E192369F6D185F73D /* PathKit.swift */,
+				68A2574CBE657BD1196DFBB5D34B369E /* Support Files */,
+			);
+			path = PathKit;
+			sourceTree = "<group>";
+		};
+		AA33A1C35D649CD3A19438C83C2E2695 /* Stencil */ = {
+			isa = PBXGroup;
+			children = (
+				1BEBB577FAED0634936657243535AE9A /* Context.swift */,
+				A631C70FDC4BAA15E3564FD908CA0952 /* Filters.swift */,
+				B88D2E4207AED3865870C6FCD26867E0 /* Include.swift */,
+				F9AE830D3BA4E6018D67103166732E9E /* Inheritence.swift */,
+				F43FF143F04C386E0875397135F425B1 /* Lexer.swift */,
+				22C6034801F4D8D0055710FBF45A611F /* Namespace.swift */,
+				322E66CBBE48868110809C976D5A3C58 /* Node.swift */,
+				9EC246A9ACF11876D80FFE3404F267DB /* Parser.swift */,
+				732C6C9A1BE62460F3E7E64E449357C6 /* Template.swift */,
+				232F0352829F1817606861F7A2565C4C /* TemplateLoader.swift */,
+				A1545799AD0498C81B7AF105C4EFC06B /* Tokenizer.swift */,
+				EFF915617F295FD52D9227EFCD454F9A /* Variable.swift */,
+				19E957657A4453DE719CADF989395352 /* Support Files */,
+			);
+			path = Stencil;
 			sourceTree = "<group>";
 		};
 		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
@@ -205,30 +357,26 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C130A143B41AC17AA345CA44E503C15A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				5D7B2530A0F1CB283D12CC48D198675B /* KeychainAccess.framework */,
+				D5B5266EF7709BD5EAD82706BEDA74E7 /* KeychainSwift.framework */,
+				16D0FF56EFDF9920309246F02E2AAE7F /* PathKit.framework */,
+				6410EC6D17D3531FF460B838251476FF /* Pods.framework */,
+				1AF049321635AF8DA275A7456CAA9320 /* Stencil.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		315C9A83BB6A526D7A7B4AD6D79E7F2B /* Headers */ = {
+		91E668A10ED64B9B8A379425DED52829 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E4076ED0DAF1385CCE53C88BFD80E8C /* Pods-umbrella.h in Headers */,
+				21E000387A093C76D06321BF3BC9E425 /* PathKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +385,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				55F9FBC65B032F0CBEB48157A3BFD594 /* KeychainAccess-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB573494938692D1806450B40E8EBDA4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD2933B70CED263FDA0C44D499134CA /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E52F5A56C55272F3071BC84DDA07E691 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD9BF45D2B6B2F229E83676D42B28E0 /* Stencil-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,26 +429,25 @@
 			);
 			name = KeychainSwift;
 			productName = KeychainSwift;
-			productReference = AAC693FCB4C78AEFE9FF7780A87CECC0 /* KeychainSwift.framework */;
+			productReference = D5B5266EF7709BD5EAD82706BEDA74E7 /* KeychainSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5982494B0FD2D30FB3EB6E3C9CABF8A8 /* Pods */ = {
+		736BF6C57071ED189895812D17ABE61E /* Stencil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7157862503302A3E201F6CD15309A39C /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 49B4473C55AB5C2BF500D72595AD50AA /* Build configuration list for PBXNativeTarget "Stencil" */;
 			buildPhases = (
-				F3BF08E27771F718FD58706E6646D455 /* Sources */,
-				A1B00AEB2074A7D2603061F51D64ECEB /* Frameworks */,
-				315C9A83BB6A526D7A7B4AD6D79E7F2B /* Headers */,
+				7AE55761645ACA6A17431C5DCFD4A1DE /* Sources */,
+				36A9B59E9D6B984771C4C7A345A071C1 /* Frameworks */,
+				E52F5A56C55272F3071BC84DDA07E691 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A62AC70B421A969CA867288A013466E3 /* PBXTargetDependency */,
-				76368514C6A49CD1B11800D54005AACA /* PBXTargetDependency */,
+				9BCDA95F9A97F5BEB07F567257C2DE16 /* PBXTargetDependency */,
 			);
-			name = Pods;
-			productName = Pods;
-			productReference = 1E0846A4125FE8D7C6B827C723BB53E7 /* Pods.framework */;
+			name = Stencil;
+			productName = Stencil;
+			productReference = 1AF049321635AF8DA275A7456CAA9320 /* Stencil.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		838A2C6DA366DE138E5FDF1AF19D94C0 /* KeychainAccess */ = {
@@ -301,7 +464,45 @@
 			);
 			name = KeychainAccess;
 			productName = KeychainAccess;
-			productReference = 4C03DD99A7CE9F4D6F5DAD0B4EF07441 /* KeychainAccess.framework */;
+			productReference = 5D7B2530A0F1CB283D12CC48D198675B /* KeychainAccess.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D23BEF36790096D0E20C41D66804E48A /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4506544BCC630B3996889229BCC56334 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				12EFB41D33A264C2CAAFE4FEA2CAD322 /* Sources */,
+				E81CA4F7662CF4E01CC82D01F54616A5 /* Frameworks */,
+				DB573494938692D1806450B40E8EBDA4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6A893A86A009CD9900A9941DE069B4E /* PBXTargetDependency */,
+				17BD5F6CA192511C355E86FCD61AED76 /* PBXTargetDependency */,
+				FAD8223A72753406CADE8ADE7EAF652C /* PBXTargetDependency */,
+				A757F0323D15720215D2FBEF7F769C5F /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 6410EC6D17D3531FF460B838251476FF /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8DBBC6BB5AD1EBD4E9C618B36F18963 /* PathKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBAA40395ABA7E82959ACE18C59290F5 /* Build configuration list for PBXNativeTarget "PathKit" */;
+			buildPhases = (
+				23795EC4A07A1F30584DA72FCC4C0DF2 /* Sources */,
+				311B6DE33629A6A7A31D33F2A3E7020B /* Frameworks */,
+				91E668A10ED64B9B8A379425DED52829 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PathKit;
+			productName = PathKit;
+			productReference = 16D0FF56EFDF9920309246F02E2AAE7F /* PathKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -321,32 +522,63 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 22ADB28FDF7D11924BA5C851C3AC6BD6 /* Products */;
+			productRefGroup = C130A143B41AC17AA345CA44E503C15A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				838A2C6DA366DE138E5FDF1AF19D94C0 /* KeychainAccess */,
 				4C698C648EE4D43C6B8BE0BE1FE91737 /* KeychainSwift */,
-				5982494B0FD2D30FB3EB6E3C9CABF8A8 /* Pods */,
+				F8DBBC6BB5AD1EBD4E9C618B36F18963 /* PathKit */,
+				D23BEF36790096D0E20C41D66804E48A /* Pods */,
+				736BF6C57071ED189895812D17ABE61E /* Stencil */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12EFB41D33A264C2CAAFE4FEA2CAD322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B033A405789DB6FBCAC5005804C9C32A /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23795EC4A07A1F30584DA72FCC4C0DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE6244F4798467314F0547A1598949D /* PathKit-dummy.m in Sources */,
+				790DA773FCBB81AD7A9ADF0B7F86C66A /* PathKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AE55761645ACA6A17431C5DCFD4A1DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C9E373C554A6F6AE32C50B9FFEB6F05 /* Context.swift in Sources */,
+				A328154BCF5D5E9C3D8E17ED4998F948 /* Filters.swift in Sources */,
+				75C788377CF16D7BFF76F172C3D7D3A5 /* Include.swift in Sources */,
+				C4C24EA95D877B0E0449A5F2370E0FDA /* Inheritence.swift in Sources */,
+				61066C23C487A6CF4220823ABC7076B3 /* Lexer.swift in Sources */,
+				4870DFBB45F5C1CD45FC53F4636CF61F /* Namespace.swift in Sources */,
+				8962A0320CFD8419CFACD8C8FE8EFE31 /* Node.swift in Sources */,
+				1C573C7309201B04D0B6F3C0120BC52E /* Parser.swift in Sources */,
+				4550D4701A01A80222745AAC642893C6 /* Stencil-dummy.m in Sources */,
+				0FAF79F5E807EF2E80A7344EA09E6F56 /* Template.swift in Sources */,
+				0B5A11EAC009A8928BD11124201C8CCF /* TemplateLoader.swift in Sources */,
+				168637005393EF809893A0A89C6782B2 /* Tokenizer.swift in Sources */,
+				CF23C405B39C4E2D0DA4DC19FEC1335D /* Variable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BE1974EE4D1CCA01327BF802B589737B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2E97BE41D443D7641693B53D2AF2244E /* Keychain.swift in Sources */,
 				40A3157EF9DCE6B16FC5F783BC51732B /* KeychainAccess-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F3BF08E27771F718FD58706E6646D455 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7FED37EC0151F0C922A589F3E7FDA775 /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,24 +596,73 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		76368514C6A49CD1B11800D54005AACA /* PBXTargetDependency */ = {
+		17BD5F6CA192511C355E86FCD61AED76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeychainSwift;
 			target = 4C698C648EE4D43C6B8BE0BE1FE91737 /* KeychainSwift */;
-			targetProxy = 9E5E9012FE2E31378D9CDAC82AFA586B /* PBXContainerItemProxy */;
+			targetProxy = F4FE095587205A40E70CBE6CE04FE69D /* PBXContainerItemProxy */;
 		};
-		A62AC70B421A969CA867288A013466E3 /* PBXTargetDependency */ = {
+		9BCDA95F9A97F5BEB07F567257C2DE16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PathKit;
+			target = F8DBBC6BB5AD1EBD4E9C618B36F18963 /* PathKit */;
+			targetProxy = D4C927D306F968F46A6741F613E60156 /* PBXContainerItemProxy */;
+		};
+		A757F0323D15720215D2FBEF7F769C5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Stencil;
+			target = 736BF6C57071ED189895812D17ABE61E /* Stencil */;
+			targetProxy = 42108A219320B06DDBB84BD766B1FCC8 /* PBXContainerItemProxy */;
+		};
+		F6A893A86A009CD9900A9941DE069B4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KeychainAccess;
 			target = 838A2C6DA366DE138E5FDF1AF19D94C0 /* KeychainAccess */;
-			targetProxy = A6959EDBDDA25A34A26AAFE7DF0784A9 /* PBXContainerItemProxy */;
+			targetProxy = 379393F27AD20DC41D5E64185087B740 /* PBXContainerItemProxy */;
+		};
+		FAD8223A72753406CADE8ADE7EAF652C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PathKit;
+			target = F8DBBC6BB5AD1EBD4E9C618B36F18963 /* PathKit */;
+			targetProxy = 726A3AA924F8CF50478E03C107210B68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		02A35DBE1A6FDCAB857D6CCA73997331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		47207730737533DC7A9C0F8198A913D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 608DE14821B85AEE2FFA8456A2203444 /* KeychainSwift.xcconfig */;
+			baseConfigurationReference = 35BD321BC2E47F0C0DF70162A19FFA86 /* KeychainSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -409,7 +690,7 @@
 		};
 		4E93A454BD383FBCCB49EF21918991FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 918F870DB6A76DE686053305605C8428 /* KeychainAccess.xcconfig */;
+			baseConfigurationReference = 2C377663FEDE6361FAE723B043823FB8 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -435,9 +716,9 @@
 			};
 			name = Debug;
 		};
-		5F05B84477881496EEF7B6E3520D0F9D /* Debug */ = {
+		6B5D0AD8BEEE163C43A2536C3B04281F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D963C40842B92F852C7932E495C74FEA /* Stencil.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -446,17 +727,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Stencil/Stencil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stencil/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Stencil/Stencil.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
+				PRODUCT_NAME = Stencil;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -505,39 +783,9 @@
 			};
 			name = Debug;
 		};
-		97FD39F7A79932A129FE0C0F4A9C16CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		AE40139E4E6ABA6029E981A98C8915F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 918F870DB6A76DE686053305605C8428 /* KeychainAccess.xcconfig */;
+			baseConfigurationReference = 2C377663FEDE6361FAE723B043823FB8 /* KeychainAccess.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -596,9 +844,39 @@
 			};
 			name = Release;
 		};
+		DB6344683DA51EA09B5C2D61E2EA732B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DB75B22E5769F83AA697E59C0086C11A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 608DE14821B85AEE2FFA8456A2203444 /* KeychainSwift.xcconfig */;
+			baseConfigurationReference = 35BD321BC2E47F0C0DF70162A19FFA86 /* KeychainSwift.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -623,6 +901,88 @@
 			};
 			name = Release;
 		};
+		DD74DBC9BC8DC774CC808EF44763B2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB7596EF3D28FC95E727EA875D78152 /* PathKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PathKit/PathKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PathKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PathKit/PathKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PathKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE5B4220E0F7EA4336FFC3087731BC35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB7596EF3D28FC95E727EA875D78152 /* PathKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PathKit/PathKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PathKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PathKit/PathKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PathKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E39F6A5BE03CEBEB08B9C9AB57072992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D963C40842B92F852C7932E495C74FEA /* Stencil.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stencil/Stencil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Stencil/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Stencil/Stencil.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Stencil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -635,11 +995,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7157862503302A3E201F6CD15309A39C /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		4506544BCC630B3996889229BCC56334 /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F05B84477881496EEF7B6E3520D0F9D /* Debug */,
-				97FD39F7A79932A129FE0C0F4A9C16CD /* Release */,
+				02A35DBE1A6FDCAB857D6CCA73997331 /* Debug */,
+				DB6344683DA51EA09B5C2D61E2EA732B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49B4473C55AB5C2BF500D72595AD50AA /* Build configuration list for PBXNativeTarget "Stencil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B5D0AD8BEEE163C43A2536C3B04281F /* Debug */,
+				E39F6A5BE03CEBEB08B9C9AB57072992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -649,6 +1018,15 @@
 			buildConfigurations = (
 				47207730737533DC7A9C0F8198A913D3 /* Debug */,
 				DB75B22E5769F83AA697E59C0086C11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBAA40395ABA7E82959ACE18C59290F5 /* Build configuration list for PBXNativeTarget "PathKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5B4220E0F7EA4336FFC3087731BC35 /* Debug */,
+				DD74DBC9BC8DC774CC808EF44763B2DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

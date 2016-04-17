@@ -8,22 +8,26 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>KeychainSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
+		</dict>
+		<key>PathKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
+		</dict>
+		<key>Stencil.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,12 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5982494B0FD2D30FB3EB6E3C9CABF8A8</key>
+		<key>736BF6C57071ED189895812D17ABE61E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>838A2C6DA366DE138E5FDF1AF19D94C0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D23BEF36790096D0E20C41D66804E48A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8DBBC6BB5AD1EBD4E9C618B36F18963</key>
 		<dict>
 			<key>primary</key>
 			<true/>

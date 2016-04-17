@@ -86,8 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/KeychainAccess.framework"
   install_framework "Pods/KeychainSwift.framework"
+  install_framework "Pods/PathKit.framework"
+  install_framework "Pods/Stencil.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/KeychainAccess.framework"
   install_framework "Pods/KeychainSwift.framework"
+  install_framework "Pods/PathKit.framework"
+  install_framework "Pods/Stencil.framework"
 fi

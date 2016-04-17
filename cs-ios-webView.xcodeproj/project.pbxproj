@@ -72,6 +72,7 @@
 		96FB6B731CC2F76600EC440D /* WebViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717EA1CB3FA27006DCC87 /* WebViewNavigation.swift */; };
 		96FB6B741CC3A6E000EC440D /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
 		96FB6B751CC3A6E100EC440D /* WebViewJsEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968717E81CB3F9B5006DCC87 /* WebViewJsEvaluator.swift */; };
+		96FB6CB51CC3C99600EC440D /* touchAuthorize.js in Resources */ = {isa = PBXBuildFile; fileRef = 96FB6CB41CC3C99600EC440D /* touchAuthorize.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,7 @@
 		96FB6B641CC251C500EC440D /* NotificationReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationReminder.swift; sourceTree = "<group>"; };
 		96FB6B681CC2528A00EC440D /* WebViewMultiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewMultiView.swift; sourceTree = "<group>"; };
 		96FB6B6E1CC2640A00EC440D /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		96FB6CB41CC3C99600EC440D /* touchAuthorize.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = touchAuthorize.js; sourceTree = "<group>"; };
 		9D4CF13FCA9BF2F6AE667353 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D05DFD5A10A2472437784FEA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -343,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				96FB6B3A1CBFB0C900EC440D /* injector.js */,
+				96FB6CB41CC3C99600EC440D /* touchAuthorize.js */,
 			);
 			path = javascript;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 			files = (
 				9626335C1C9EA88500F8402F /* Assets.xcassets in Resources */,
 				96FB6B3B1CBFB53800EC440D /* injector.js in Resources */,
+				96FB6CB51CC3C99600EC440D /* touchAuthorize.js in Resources */,
 				9600E6631C9F2B9600AC343C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '83A3307FB0FE382BA4441408'
-               BlueprintName = 'KeychainSwift'
+               BlueprintIdentifier = '467FEC2A316E2E1475622CE6'
+               BlueprintName = 'Stencil'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'KeychainSwift.framework'>
+               BuildableName = 'Stencil.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
